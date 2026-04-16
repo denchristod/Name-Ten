@@ -3,7 +3,8 @@
     { "id": "food", "label": "Food & Drink", "icon": "🍕", "default": true },
     { "id": "sport", "label": "Sport", "icon": "⚽", "default": true },
     { "id": "nature", "label": "Nature", "icon": "🌿", "default": true },
-    { "id": "tvfilm", "label": "TV & Film", "icon": "🎬", "default": true },
+    { "id": "animecart", "label": "Anime & Cartoons", "icon": "🍥", "default": true },
+    { "id": "tvfilm", "label": "TV & Films", "icon": "🎬", "default": true },
     { "id": "travel", "label": "Travel", "icon": "✈️", "default": true },
     { "id": "home", "label": "Around the Home", "icon": "🏠", "default": true },
     { "id": "science", "label": "Science", "icon": "🔬", "default": true },
@@ -78,6 +79,216 @@
     },
 
     {
+    "cat": "food",
+    "q": "Name 10 fruits",
+    "items": [
+    { "n": "Apple", "p": 1 },
+    { "n": "Banana", "p": 1 },
+    { "n": "Orange", "p": 1 },
+    { "n": "Strawberry", "p": 1 },
+    { "n": "Grapes", "p": 2 },
+    { "n": "Pineapple", "p": 2 },
+    { "n": "Mango", "p": 2 },
+    { "n": "Peach", "p": 2 },
+    { "n": "Pomegranate", "p": 3 },
+    { "n": "Dragon fruit", "p": 4 }
+  ]
+    },
+    {
+    "cat": "food",
+    "q": "Name 10 vegetables",
+    "items": [
+        { "n": "Carrot", "p": 1 },
+        { "n": "Broccoli", "p": 1 },
+        { "n": "Tomato", "p": 1 },
+        { "n": "Potato", "p": 1 },
+        { "n": "Onion", "p": 2 },
+        { "n": "Cucumber", "p": 2 },
+        { "n": "Pepper", "p": 2 },
+        { "n": "Spinach", "p": 2 },
+        { "n": "Aubergine", "p": 3 },
+        { "n": "Artichoke", "p": 4 }
+    ]
+    },
+    {
+    "cat": "food",
+    "q": "Name 10 types of cheese",
+    "items": [
+        { "n": "Cheddar", "p": 1 },
+        { "n": "Mozzarella", "p": 1 },
+        { "n": "Feta", "p": 1 },
+        { "n": "Parmesan", "p": 1 },
+        { "n": "Brie", "p": 2 },
+        { "n": "Camembert", "p": 2 },
+        { "n": "Gouda", "p": 2 },
+        { "n": "Blue cheese", "p": 2 },
+        { "n": "Halloumi", "p": 3 },
+        { "n": "Roquefort", "p": 4 }
+    ]
+    },
+    {
+    "cat": "food",
+    "q": "Name 10 fast food items",
+    "items": [
+        { "n": "Burger", "p": 1 },
+        { "n": "Fries", "p": 1 },
+        { "n": "Pizza", "p": 1 },
+        { "n": "Hot dog", "p": 1 },
+        { "n": "Fried chicken", "p": 2 },
+        { "n": "Chicken nuggets", "p": 2 },
+        { "n": "Wrap", "p": 2 },
+        { "n": "Tacos", "p": 2 },
+        { "n": "Onion rings", "p": 3 },
+        { "n": "Corn dog", "p": 4 }
+    ]
+    },
+    {
+    "cat": "food",
+    "q": "Name 10 desserts",
+    "items": [
+        { "n": "Cake", "p": 1 },
+        { "n": "Ice cream", "p": 1 },
+        { "n": "Chocolate", "p": 1 },
+        { "n": "Cookies", "p": 1 },
+        { "n": "Brownies", "p": 2 },
+        { "n": "Cheesecake", "p": 2 },
+        { "n": "Donuts", "p": 2 },
+        { "n": "Cupcakes", "p": 2 },
+        { "n": "Tiramisu", "p": 3 },
+        { "n": "Crème brûlée", "p": 4 }
+    ]
+    },
+    {
+    "cat": "food",
+    "q": "Name 10 drinks",
+    "items": [
+        { "n": "Water", "p": 1 },
+        { "n": "Coffee", "p": 1 },
+        { "n": "Tea", "p": 1 },
+        { "n": "Juice", "p": 1 },
+        { "n": "Soda", "p": 2 },
+        { "n": "Milkshake", "p": 2 },
+        { "n": "Smoothie", "p": 2 },
+        { "n": "Beer", "p": 2 },
+        { "n": "Cocktail", "p": 3 },
+        { "n": "Kombucha", "p": 4 }
+    ]
+    },
+
+    {
+  "cat": "food",
+  "q": "Name 10 types of bread",
+  "items": [
+    { "n": "White bread", "p": 1 },
+    { "n": "Whole wheat", "p": 1 },
+    { "n": "Baguette", "p": 1 },
+    { "n": "Toast", "p": 1 },
+    { "n": "Sourdough", "p": 2 },
+    { "n": "Rye bread", "p": 2 },
+    { "n": "Ciabatta", "p": 2 },
+    { "n": "Pita", "p": 2 },
+    { "n": "Focaccia", "p": 3 },
+    { "n": "Brioche", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 things you can grill",
+  "items": [
+    { "n": "Burger", "p": 1 },
+    { "n": "Sausage", "p": 1 },
+    { "n": "Chicken", "p": 1 },
+    { "n": "Steak", "p": 1 },
+    { "n": "Corn", "p": 2 },
+    { "n": "Peppers", "p": 2 },
+    { "n": "Fish", "p": 2 },
+    { "n": "Halloumi", "p": 2 },
+    { "n": "Pineapple", "p": 3 },
+    { "n": "Aubergine", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 things you might find in a salad",
+  "items": [
+    { "n": "Lettuce", "p": 1 },
+    { "n": "Tomato", "p": 1 },
+    { "n": "Cucumber", "p": 1 },
+    { "n": "Onion", "p": 1 },
+    { "n": "Olives", "p": 2 },
+    { "n": "Feta", "p": 2 },
+    { "n": "Croutons", "p": 2 },
+    { "n": "Chicken", "p": 2 },
+    { "n": "Avocado", "p": 3 },
+    { "n": "Quinoa", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 types of meat",
+  "items": [
+    { "n": "Chicken", "p": 1 },
+    { "n": "Beef", "p": 1 },
+    { "n": "Pork", "p": 1 },
+    { "n": "Lamb", "p": 1 },
+    { "n": "Turkey", "p": 2 },
+    { "n": "Duck", "p": 2 },
+    { "n": "Bacon", "p": 2 },
+    { "n": "Sausage", "p": 2 },
+    { "n": "Venison", "p": 3 },
+    { "n": "Goat", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 ice cream flavors",
+  "items": [
+    { "n": "Vanilla", "p": 1 },
+    { "n": "Chocolate", "p": 1 },
+    { "n": "Strawberry", "p": 1 },
+    { "n": "Mint", "p": 1 },
+    { "n": "Cookies and cream", "p": 2 },
+    { "n": "Caramel", "p": 2 },
+    { "n": "Pistachio", "p": 2 },
+    { "n": "Mango", "p": 2 },
+    { "n": "Matcha", "p": 3 },
+    { "n": "Lavender", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 things you can bake",
+  "items": [
+    { "n": "Cake", "p": 1 },
+    { "n": "Cookies", "p": 1 },
+    { "n": "Bread", "p": 1 },
+    { "n": "Brownies", "p": 1 },
+    { "n": "Muffins", "p": 2 },
+    { "n": "Pie", "p": 2 },
+    { "n": "Pizza", "p": 2 },
+    { "n": "Lasagna", "p": 2 },
+    { "n": "Soufflé", "p": 3 },
+    { "n": "Macarons", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 sandwich fillings",
+  "items": [
+    { "n": "Ham", "p": 1 },
+    { "n": "Cheese", "p": 1 },
+    { "n": "Chicken", "p": 1 },
+    { "n": "Tuna", "p": 1 },
+    { "n": "Egg", "p": 2 },
+    { "n": "Turkey", "p": 2 },
+    { "n": "Bacon", "p": 2 },
+    { "n": "Avocado", "p": 2 },
+    { "n": "Salami", "p": 3 },
+    { "n": "Pastrami", "p": 4 }
+  ]
+},
+
+    {
       "cat": "sport",
       "q": "Name 10 sports played with a ball",
       "items": [
@@ -109,6 +320,218 @@
         { "n": "Modern pentathlon", "p": 4 }
       ]
     },
+
+    {
+  "cat": "sport",
+  "q": "Name 10 team sports",
+  "items": [
+    { "n": "Football", "p": 1 },
+    { "n": "Basketball", "p": 1 },
+    { "n": "Volleyball", "p": 1 },
+    { "n": "Rugby", "p": 1 },
+    { "n": "Cricket", "p": 2 },
+    { "n": "Baseball", "p": 2 },
+    { "n": "Handball", "p": 2 },
+    { "n": "Hockey", "p": 2 },
+    { "n": "Water polo", "p": 3 },
+    { "n": "Kabaddi", "p": 4 }
+  ]
+},
+{
+  "cat": "sport",
+  "q": "Name 10 individual sports",
+  "items": [
+    { "n": "Tennis", "p": 1 },
+    { "n": "Swimming", "p": 1 },
+    { "n": "Boxing", "p": 1 },
+    { "n": "Running", "p": 1 },
+    { "n": "Cycling", "p": 2 },
+    { "n": "Gymnastics", "p": 2 },
+    { "n": "Wrestling", "p": 2 },
+    { "n": "Skiing", "p": 2 },
+    { "n": "Fencing", "p": 3 },
+    { "n": "Archery", "p": 4 }
+  ]
+},
+{
+  "cat": "sport",
+  "q": "Name 10 sports played indoors",
+  "items": [
+    { "n": "Basketball", "p": 1 },
+    { "n": "Volleyball", "p": 1 },
+    { "n": "Badminton", "p": 1 },
+    { "n": "Table tennis", "p": 1 },
+    { "n": "Squash", "p": 2 },
+    { "n": "Gymnastics", "p": 2 },
+    { "n": "Handball", "p": 2 },
+    { "n": "Futsal", "p": 2 },
+    { "n": "Darts", "p": 3 },
+    { "n": "Snooker", "p": 4 }
+  ]
+},
+{
+  "cat": "sport",
+  "q": "Name 10 sports played outdoors",
+  "items": [
+    { "n": "Football", "p": 1 },
+    { "n": "Tennis", "p": 1 },
+    { "n": "Golf", "p": 1 },
+    { "n": "Cricket", "p": 1 },
+    { "n": "Rugby", "p": 2 },
+    { "n": "Baseball", "p": 2 },
+    { "n": "Cycling", "p": 2 },
+    { "n": "Running", "p": 2 },
+    { "n": "Surfing", "p": 3 },
+    { "n": "Paragliding", "p": 4 }
+  ]
+},
+{
+  "cat": "sport",
+  "q": "Name 10 water sports",
+  "items": [
+    { "n": "Swimming", "p": 1 },
+    { "n": "Diving", "p": 1 },
+    { "n": "Water polo", "p": 1 },
+    { "n": "Surfing", "p": 1 },
+    { "n": "Sailing", "p": 2 },
+    { "n": "Rowing", "p": 2 },
+    { "n": "Canoeing", "p": 2 },
+    { "n": "Kayaking", "p": 2 },
+    { "n": "Jet skiing", "p": 3 },
+    { "n": "Windsurfing", "p": 4 }
+  ]
+},
+{
+  "cat": "sport",
+  "q": "Name 10 combat sports",
+  "items": [
+    { "n": "Boxing", "p": 1 },
+    { "n": "Wrestling", "p": 1 },
+    { "n": "Judo", "p": 1 },
+    { "n": "Karate", "p": 1 },
+    { "n": "Taekwondo", "p": 2 },
+    { "n": "MMA", "p": 2 },
+    { "n": "Kickboxing", "p": 2 },
+    { "n": "Muay Thai", "p": 2 },
+    { "n": "Fencing", "p": 3 },
+    { "n": "Sumo", "p": 4 }
+  ]
+},
+{
+  "cat": "sport",
+  "q": "Name 10 winter sports",
+  "items": [
+    { "n": "Skiing", "p": 1 },
+    { "n": "Snowboarding", "p": 1 },
+    { "n": "Ice skating", "p": 1 },
+    { "n": "Ice hockey", "p": 1 },
+    { "n": "Bobsleigh", "p": 2 },
+    { "n": "Curling", "p": 2 },
+    { "n": "Luge", "p": 2 },
+    { "n": "Biathlon", "p": 2 },
+    { "n": "Skeleton", "p": 3 },
+    { "n": "Nordic combined", "p": 4 }
+  ]
+},
+{
+  "cat": "sport",
+  "q": "Name 10 sports that use a racket",
+  "items": [
+    { "n": "Tennis", "p": 1 },
+    { "n": "Badminton", "p": 1 },
+    { "n": "Squash", "p": 1 },
+    { "n": "Table tennis", "p": 1 },
+    { "n": "Padel", "p": 2 },
+    { "n": "Pickleball", "p": 2 },
+    { "n": "Racquetball", "p": 2 },
+    { "n": "Soft tennis", "p": 3 },
+    { "n": "Real tennis", "p": 3 },
+    { "n": "Frontenis", "p": 4 }
+  ]
+},
+
+{
+  "cat": "sport",
+  "q": "Name 10 famous athletes",
+  "items": [
+    { "n": "Usain Bolt", "p": 1 },
+    { "n": "Michael Jordan", "p": 1 },
+    { "n": "Serena Williams", "p": 1 },
+    { "n": "Lionel Messi", "p": 1 },
+    { "n": "Cristiano Ronaldo", "p": 2 },
+    { "n": "LeBron James", "p": 2 },
+    { "n": "Tiger Woods", "p": 2 },
+    { "n": "Roger Federer", "p": 2 },
+    { "n": "Simone Biles", "p": 3 },
+    { "n": "Novak Djokovic", "p": 4 }
+  ]
+},
+
+{
+  "cat": "sport",
+  "q": "Name 10 Formula 1 drivers",
+  "items": [
+    { "n": "Lewis Hamilton", "p": 1 },
+    { "n": "Max Verstappen", "p": 1 },
+    { "n": "Fernando Alonso", "p": 1 },
+    { "n": "Charles Leclerc", "p": 1 },
+    { "n": "Lando Norris", "p": 2 },
+    { "n": "Carlos Sainz", "p": 2 },
+    { "n": "George Russell", "p": 2 },
+    { "n": "Sergio Perez", "p": 2 },
+    { "n": "Oscar Piastri", "p": 3 },
+    { "n": "Yuki Tsunoda", "p": 4 }
+  ]
+},
+
+{
+  "cat": "sport",
+  "q": "Name 10 football teams that have won the Champions League",
+  "items": [
+    { "n": "Real Madrid", "p": 1 },
+    { "n": "Barcelona", "p": 1 },
+    { "n": "Bayern Munich", "p": 1 },
+    { "n": "Liverpool", "p": 1 },
+    { "n": "Manchester United", "p": 2 },
+    { "n": "Chelsea", "p": 2 },
+    { "n": "AC Milan", "p": 2 },
+    { "n": "Inter Milan", "p": 2 },
+    { "n": "Ajax", "p": 3 },
+    { "n": "Porto", "p": 4 }
+  ]
+},
+{
+  "cat": "sport",
+  "q": "Name 10 Premier League football teams",
+  "items": [
+    { "n": "Manchester United", "p": 1 },
+    { "n": "Manchester City", "p": 1 },
+    { "n": "Liverpool", "p": 1 },
+    { "n": "Arsenal", "p": 1 },
+    { "n": "Chelsea", "p": 2 },
+    { "n": "Tottenham", "p": 2 },
+    { "n": "Newcastle", "p": 2 },
+    { "n": "Aston Villa", "p": 2 },
+    { "n": "Brighton", "p": 3 },
+    { "n": "Luton Town", "p": 4 }
+  ]
+},
+{
+  "cat": "sport",
+  "q": "Name 10 NBA basketball teams",
+  "items": [
+    { "n": "Lakers", "p": 1 },
+    { "n": "Warriors", "p": 1 },
+    { "n": "Celtics", "p": 1 },
+    { "n": "Bulls", "p": 1 },
+    { "n": "Heat", "p": 2 },
+    { "n": "Nets", "p": 2 },
+    { "n": "Suns", "p": 2 },
+    { "n": "Bucks", "p": 2 },
+    { "n": "Timberwolves", "p": 3 },
+    { "n": "Pelicans", "p": 4 }
+  ]
+},
 
     {
       "cat": "nature",
@@ -144,6 +567,296 @@
     },
 
     {
+  "cat": "nature",
+  "q": "Name 10 animals that live in the jungle",
+  "items": [
+    { "n": "Tiger", "p": 1 },
+    { "n": "Monkey", "p": 1 },
+    { "n": "Parrot", "p": 1 },
+    { "n": "Snake", "p": 1 },
+    { "n": "Jaguar", "p": 2 },
+    { "n": "Toucan", "p": 2 },
+    { "n": "Frog", "p": 2 },
+    { "n": "Chimpanzee", "p": 2 },
+    { "n": "Tapir", "p": 3 },
+    { "n": "Okapi", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 birds",
+  "items": [
+    { "n": "Eagle", "p": 1 },
+    { "n": "Sparrow", "p": 1 },
+    { "n": "Pigeon", "p": 1 },
+    { "n": "Owl", "p": 1 },
+    { "n": "Flamingo", "p": 2 },
+    { "n": "Peacock", "p": 2 },
+    { "n": "Penguin", "p": 2 },
+    { "n": "Seagull", "p": 2 },
+    { "n": "Heron", "p": 3 },
+    { "n": "Albatross", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 animals that hibernate",
+  "items": [
+    { "n": "Bear", "p": 1 },
+    { "n": "Hedgehog", "p": 1 },
+    { "n": "Bat", "p": 1 },
+    { "n": "Groundhog", "p": 1 },
+    { "n": "Squirrel", "p": 2 },
+    { "n": "Frog", "p": 2 },
+    { "n": "Snake", "p": 2 },
+    { "n": "Tortoise", "p": 2 },
+    { "n": "Dormouse", "p": 3 },
+    { "n": "Skunk", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 types of flower",
+  "items": [
+    { "n": "Rose", "p": 1 },
+    { "n": "Tulip", "p": 1 },
+    { "n": "Daisy", "p": 1 },
+    { "n": "Sunflower", "p": 1 },
+    { "n": "Lily", "p": 2 },
+    { "n": "Orchid", "p": 2 },
+    { "n": "Lavender", "p": 2 },
+    { "n": "Daffodil", "p": 2 },
+    { "n": "Peony", "p": 3 },
+    { "n": "Chrysanthemum", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 animals that can fly",
+  "items": [
+    { "n": "Bird", "p": 1 },
+    { "n": "Bat", "p": 1 },
+    { "n": "Butterfly", "p": 1 },
+    { "n": "Bee", "p": 1 },
+    { "n": "Eagle", "p": 2 },
+    { "n": "Owl", "p": 2 },
+    { "n": "Dragonfly", "p": 2 },
+    { "n": "Parrot", "p": 2 },
+    { "n": "Flying squirrel", "p": 3 },
+    { "n": "Albatross", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 desert animals",
+  "items": [
+    { "n": "Camel", "p": 1 },
+    { "n": "Lizard", "p": 1 },
+    { "n": "Snake", "p": 1 },
+    { "n": "Scorpion", "p": 1 },
+    { "n": "Fennec fox", "p": 2 },
+    { "n": "Meerkat", "p": 2 },
+    { "n": "Vulture", "p": 2 },
+    { "n": "Jackal", "p": 2 },
+    { "n": "Addax", "p": 3 },
+    { "n": "Jerboa", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 farm animals",
+  "items": [
+    { "n": "Cow", "p": 1 },
+    { "n": "Sheep", "p": 1 },
+    { "n": "Pig", "p": 1 },
+    { "n": "Chicken", "p": 1 },
+    { "n": "Goat", "p": 2 },
+    { "n": "Horse", "p": 2 },
+    { "n": "Duck", "p": 2 },
+    { "n": "Turkey", "p": 2 },
+    { "n": "Donkey", "p": 3 },
+    { "n": "Alpaca", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 types of fish",
+  "items": [
+    { "n": "Salmon", "p": 1 },
+    { "n": "Tuna", "p": 1 },
+    { "n": "Cod", "p": 1 },
+    { "n": "Trout", "p": 1 },
+    { "n": "Sardine", "p": 2 },
+    { "n": "Mackerel", "p": 2 },
+    { "n": "Carp", "p": 2 },
+    { "n": "Catfish", "p": 2 },
+    { "n": "Barracuda", "p": 3 },
+    { "n": "Halibut", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 mammals",
+  "items": [
+    { "n": "Dog", "p": 1 },
+    { "n": "Cat", "p": 1 },
+    { "n": "Elephant", "p": 1 },
+    { "n": "Lion", "p": 1 },
+    { "n": "Tiger", "p": 2 },
+    { "n": "Horse", "p": 2 },
+    { "n": "Whale", "p": 2 },
+    { "n": "Dolphin", "p": 2 },
+    { "n": "Platypus", "p": 3 },
+    { "n": "Bat", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 reptiles",
+  "items": [
+    { "n": "Snake", "p": 1 },
+    { "n": "Lizard", "p": 1 },
+    { "n": "Crocodile", "p": 1 },
+    { "n": "Turtle", "p": 1 },
+    { "n": "Alligator", "p": 2 },
+    { "n": "Gecko", "p": 2 },
+    { "n": "Iguana", "p": 2 },
+    { "n": "Chameleon", "p": 2 },
+    { "n": "Komodo dragon", "p": 3 },
+    { "n": "Tuatara", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 natural disasters",
+  "items": [
+    { "n": "Earthquake", "p": 1 },
+    { "n": "Flood", "p": 1 },
+    { "n": "Hurricane", "p": 1 },
+    { "n": "Tornado", "p": 1 },
+    { "n": "Wildfire", "p": 2 },
+    { "n": "Volcano", "p": 2 },
+    { "n": "Tsunami", "p": 2 },
+    { "n": "Drought", "p": 2 },
+    { "n": "Avalanche", "p": 3 },
+    { "n": "Landslide", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 types of weather",
+  "items": [
+    { "n": "Rain", "p": 1 },
+    { "n": "Snow", "p": 1 },
+    { "n": "Wind", "p": 1 },
+    { "n": "Sunshine", "p": 1 },
+    { "n": "Storm", "p": 2 },
+    { "n": "Fog", "p": 2 },
+    { "n": "Hail", "p": 2 },
+    { "n": "Thunder", "p": 2 },
+    { "n": "Blizzard", "p": 3 },
+    { "n": "Monsoon", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 types of rock or mineral",
+  "items": [
+    { "n": "Granite", "p": 1 },
+    { "n": "Marble", "p": 1 },
+    { "n": "Quartz", "p": 1 },
+    { "n": "Limestone", "p": 1 },
+    { "n": "Slate", "p": 2 },
+    { "n": "Sandstone", "p": 2 },
+    { "n": "Basalt", "p": 2 },
+    { "n": "Obsidian", "p": 2 },
+    { "n": "Pumice", "p": 3 },
+    { "n": "Gypsum", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 animals that live in cold climates",
+  "items": [
+    { "n": "Polar bear", "p": 1 },
+    { "n": "Penguin", "p": 1 },
+    { "n": "Seal", "p": 1 },
+    { "n": "Walrus", "p": 1 },
+    { "n": "Arctic fox", "p": 2 },
+    { "n": "Snowy owl", "p": 2 },
+    { "n": "Reindeer", "p": 2 },
+    { "n": "Moose", "p": 2 },
+    { "n": "Arctic hare", "p": 3 },
+    { "n": "Snow leopard", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 insects",
+  "items": [
+    { "n": "Ant", "p": 1 },
+    { "n": "Bee", "p": 1 },
+    { "n": "Butterfly", "p": 1 },
+    { "n": "Fly", "p": 1 },
+    { "n": "Mosquito", "p": 2 },
+    { "n": "Beetle", "p": 2 },
+    { "n": "Grasshopper", "p": 2 },
+    { "n": "Wasp", "p": 2 },
+    { "n": "Dragonfly", "p": 3 },
+    { "n": "Praying mantis", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 large animals",
+  "items": [
+    { "n": "Elephant", "p": 1 },
+    { "n": "Whale", "p": 1 },
+    { "n": "Giraffe", "p": 1 },
+    { "n": "Hippo", "p": 1 },
+    { "n": "Rhino", "p": 2 },
+    { "n": "Bison", "p": 2 },
+    { "n": "Moose", "p": 2 },
+    { "n": "Camel", "p": 2 },
+    { "n": "Gorilla", "p": 3 },
+    { "n": "Blue whale", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 small animals",
+  "items": [
+    { "n": "Mouse", "p": 1 },
+    { "n": "Frog", "p": 1 },
+    { "n": "Squirrel", "p": 1 },
+    { "n": "Rabbit", "p": 1 },
+    { "n": "Hamster", "p": 2 },
+    { "n": "Hedgehog", "p": 2 },
+    { "n": "Lizard", "p": 2 },
+    { "n": "Rat", "p": 2 },
+    { "n": "Shrew", "p": 3 },
+    { "n": "Mole", "p": 4 }
+  ]
+},
+
+{
+  "cat": "nature",
+  "q": "Name 10 dinosaurs",
+  "items": [
+    { "n": "Tyrannosaurus rex", "p": 1 },
+    { "n": "Triceratops", "p": 1 },
+    { "n": "Velociraptor", "p": 1 },
+    { "n": "Stegosaurus", "p": 1 },
+    { "n": "Brachiosaurus", "p": 2 },
+    { "n": "Spinosaurus", "p": 2 },
+    { "n": "Allosaurus", "p": 2 },
+    { "n": "Ankylosaurus", "p": 2 },
+    { "n": "Parasaurolophus", "p": 3 },
+    { "n": "Quetzalcoatlus", "p": 4 }
+  ]
+},
+
+    {
       "cat": "tvfilm",
       "q": "Name 10 superhero films",
       "items": [
@@ -172,9 +885,357 @@
         { "n": "Encanto", "p": 2 },
         { "n": "Treasure Planet", "p": 3 },
         { "n": "Bolt", "p": 3 },
-        { "n": "The Black Cauldron", "p": 4 }
+        { "n": "Brother Bear", "p": 4 }
       ]
     },
+
+    {
+  "cat": "tvfilm",
+  "q": "Name 10 characters from Harry Potter",
+  "items": [
+    { "n": "Harry Potter", "p": 1 },
+    { "n": "Hermione", "p": 1 },
+    { "n": "Ron", "p": 1 },
+    { "n": "Dumbledore", "p": 1 },
+    { "n": "Snape", "p": 2 },
+    { "n": "Draco", "p": 2 },
+    { "n": "Hagrid", "p": 2 },
+    { "n": "Voldemort", "p": 2 },
+    { "n": "Sirius Black", "p": 3 },
+    { "n": "Bellatrix", "p": 4 }
+  ]
+},
+
+    {
+  "cat": "tvfilm",
+  "q": "Name 10 Marvel Cinematic Universe characters",
+  "items": [
+    { "n": "Iron Man", "p": 1 },
+    { "n": "Captain America", "p": 1 },
+    { "n": "Thor", "p": 1 },
+    { "n": "Hulk", "p": 1 },
+    { "n": "Black Widow", "p": 2 },
+    { "n": "Hawkeye", "p": 2 },
+    { "n": "Doctor Strange", "p": 2 },
+    { "n": "Spider-Man", "p": 2 },
+    { "n": "Scarlet Witch", "p": 3 },
+    { "n": "Vision", "p": 4 }
+  ]
+},
+{
+  "cat": "tvfilm",
+  "q": "Name 10 DC characters",
+  "items": [
+    { "n": "Batman", "p": 1 },
+    { "n": "Superman", "p": 1 },
+    { "n": "Wonder Woman", "p": 1 },
+    { "n": "The Flash", "p": 1 },
+    { "n": "Aquaman", "p": 2 },
+    { "n": "Green Lantern", "p": 2 },
+    { "n": "Joker", "p": 2 },
+    { "n": "Harley Quinn", "p": 2 },
+    { "n": "Lex Luthor", "p": 3 },
+    { "n": "Darkseid", "p": 4 }
+  ]
+},
+{
+  "cat": "tvfilm",
+  "q": "Name 10 characters from Friends",
+  "items": [
+    { "n": "Ross", "p": 1 },
+    { "n": "Rachel", "p": 1 },
+    { "n": "Chandler", "p": 1 },
+    { "n": "Monica", "p": 1 },
+    { "n": "Joey", "p": 2 },
+    { "n": "Phoebe", "p": 2 },
+    { "n": "Gunther", "p": 2 },
+    { "n": "Janice", "p": 2 },
+    { "n": "Mike", "p": 3 },
+    { "n": "Emily", "p": 4 }
+  ]
+},
+{
+  "cat": "tvfilm",
+  "q": "Name 10 characters from Game of Thrones",
+  "items": [
+    { "n": "Jon Snow", "p": 1 },
+    { "n": "Daenerys", "p": 1 },
+    { "n": "Tyrion", "p": 1 },
+    { "n": "Arya", "p": 1 },
+    { "n": "Sansa", "p": 2 },
+    { "n": "Cersei", "p": 2 },
+    { "n": "Jaime", "p": 2 },
+    { "n": "Bran", "p": 2 },
+    { "n": "The Hound", "p": 3 },
+    { "n": "Littlefinger", "p": 4 }
+  ]
+},
+{
+  "cat": "tvfilm",
+  "q": "Name 10 Star Wars characters",
+  "items": [
+    { "n": "Luke Skywalker", "p": 1 },
+    { "n": "Darth Vader", "p": 1 },
+    { "n": "Leia", "p": 1 },
+    { "n": "Han Solo", "p": 1 },
+    { "n": "Yoda", "p": 2 },
+    { "n": "Obi-Wan Kenobi", "p": 2 },
+    { "n": "Chewbacca", "p": 2 },
+    { "n": "R2-D2", "p": 2 },
+    { "n": "Kylo Ren", "p": 3 },
+    { "n": "Mace Windu", "p": 4 }
+  ]
+},
+{
+  "cat": "tvfilm",
+  "q": "Name 10 characters from The Office (US)",
+  "items": [
+    { "n": "Michael Scott", "p": 1 },
+    { "n": "Jim", "p": 1 },
+    { "n": "Pam", "p": 1 },
+    { "n": "Dwight", "p": 1 },
+    { "n": "Angela", "p": 2 },
+    { "n": "Kevin", "p": 2 },
+    { "n": "Stanley", "p": 2 },
+    { "n": "Oscar", "p": 2 },
+    { "n": "Creed", "p": 3 },
+    { "n": "Toby", "p": 4 }
+  ]
+},
+{
+  "cat": "tvfilm",
+  "q": "Name 10 characters from Stranger Things",
+  "items": [
+    { "n": "Eleven", "p": 1 },
+    { "n": "Mike", "p": 1 },
+    { "n": "Dustin", "p": 1 },
+    { "n": "Lucas", "p": 1 },
+    { "n": "Will", "p": 2 },
+    { "n": "Max", "p": 2 },
+    { "n": "Hopper", "p": 2 },
+    { "n": "Joyce", "p": 2 },
+    { "n": "Steve", "p": 3 },
+    { "n": "Vecna", "p": 4 }
+  ]
+},
+{
+  "cat": "tvfilm",
+  "q": "Name 10 Disney animated characters",
+  "items": [
+    { "n": "Mickey Mouse", "p": 1 },
+    { "n": "Donald Duck", "p": 1 },
+    { "n": "Goofy", "p": 1 },
+    { "n": "Simba", "p": 1 },
+    { "n": "Aladdin", "p": 2 },
+    { "n": "Elsa", "p": 2 },
+    { "n": "Moana", "p": 2 },
+    { "n": "Ariel", "p": 2 },
+    { "n": "Hercules", "p": 3 },
+    { "n": "Tarzan", "p": 4 }
+  ]
+},
+{
+  "cat": "tvfilm",
+  "q": "Name 10 Pixar films",
+  "items": [
+    { "n": "Toy Story", "p": 1 },
+    { "n": "Finding Nemo", "p": 1 },
+    { "n": "The Incredibles", "p": 1 },
+    { "n": "Cars", "p": 1 },
+    { "n": "Ratatouille", "p": 2 },
+    { "n": "Up", "p": 2 },
+    { "n": "Wall-E", "p": 2 },
+    { "n": "Inside Out", "p": 2 },
+    { "n": "Coco", "p": 3 },
+    { "n": "Brave", "p": 4 }
+  ]
+},
+{
+  "cat": "tvfilm",
+  "q": "Name 10 actors who have played superheroes",
+  "items": [
+    { "n": "Robert Downey Jr.", "p": 1 },
+    { "n": "Chris Evans", "p": 1 },
+    { "n": "Chris Hemsworth", "p": 1 },
+    { "n": "Tom Holland", "p": 1 },
+    { "n": "Henry Cavill", "p": 2 },
+    { "n": "Ben Affleck", "p": 2 },
+    { "n": "Gal Gadot", "p": 2 },
+    { "n": "Scarlett Johansson", "p": 2 },
+    { "n": "Ryan Reynolds", "p": 3 },
+    { "n": "Hugh Jackman", "p": 4 }
+  ]
+},
+
+    {
+  "cat": "animecart",
+  "q": "Name 10 characters from Avatar: The Last Airbender",
+  "items": [
+    { "n": "Aang", "p": 1 },
+    { "n": "Katara", "p": 1 },
+    { "n": "Sokka", "p": 1 },
+    { "n": "Zuko", "p": 1 },
+    { "n": "Toph", "p": 1 },
+    { "n": "Iroh", "p": 2 },
+    { "n": "Azula", "p": 2 },
+    { "n": "Appa", "p": 3 },
+    { "n": "Momo", "p": 3 },
+    { "n": "Ozai", "p": 4 }
+  ]
+},
+
+{
+  "cat": "animecart",
+  "q": "Name 10 Marines from One Piece",
+  "items": [
+    { "n": "Garp", "p": 1 },
+    { "n": "Sengoku", "p": 1 },
+    { "n": "Akainu", "p": 1 },
+    { "n": "Aokiji", "p": 1 },
+    { "n": "Kizaru", "p": 2 },
+    { "n": "Smoker", "p": 2 },
+    { "n": "Tashigi", "p": 2 },
+    { "n": "Coby", "p": 2 },
+    { "n": "Helmeppo", "p": 3 },
+    { "n": "Fujitora", "p": 4 }
+  ]
+},
+
+{
+  "cat": "animecart",
+  "q": "Name 10 pirates from One Piece",
+  "items": [
+    { "n": "Luffy", "p": 1 },
+    { "n": "Zoro", "p": 1 },
+    { "n": "Sanji", "p": 1 },
+    { "n": "Blackbeard", "p": 1 },
+    { "n": "Shanks", "p": 2 },
+    { "n": "Kid", "p": 2 },
+    { "n": "Law", "p": 2 },
+    { "n": "Buggy", "p": 2 },
+    { "n": "Kaido", "p": 3 },
+    { "n": "Big Mom", "p": 4 }
+  ]
+},
+
+{
+  "cat": "animecart",
+  "q": "Name 10 One Piece characters with Devil Fruit powers",
+  "items": [
+    { "n": "Luffy", "p": 1 },
+    { "n": "Blackbeard", "p": 1 },
+    { "n": "Ace", "p": 1 },
+    { "n": "Law", "p": 1 },
+    { "n": "Doflamingo", "p": 2 },
+    { "n": "Boa Hancock", "p": 2 },
+    { "n": "Buggy", "p": 2 },
+    { "n": "Smoker", "p": 2 },
+    { "n": "Crocodile", "p": 3 },
+    { "n": "Enel", "p": 4 }
+  ]
+},
+
+{
+  "cat": "animecart",
+  "q": "Name 10 One Piece characters with Devil Fruit powers",
+  "items": [
+    { "n": "Luffy", "p": 1 },
+    { "n": "Blackbeard", "p": 1 },
+    { "n": "Ace", "p": 1 },
+    { "n": "Law", "p": 1 },
+    { "n": "Doflamingo", "p": 2 },
+    { "n": "Boa Hancock", "p": 2 },
+    { "n": "Buggy", "p": 2 },
+    { "n": "Smoker", "p": 2 },
+    { "n": "Crocodile", "p": 3 },
+    { "n": "Enel", "p": 4 }
+  ]
+},
+
+{
+  "cat": "animecart",
+  "q": "Name 10 characters from Naruto",
+  "items": [
+    { "n": "Naruto", "p": 1 },
+    { "n": "Sasuke", "p": 1 },
+    { "n": "Sakura", "p": 1 },
+    { "n": "Kakashi", "p": 1 },
+    { "n": "Itachi", "p": 2 },
+    { "n": "Gaara", "p": 2 },
+    { "n": "Hinata", "p": 2 },
+    { "n": "Jiraiya", "p": 2 },
+    { "n": "Tsunade", "p": 3 },
+    { "n": "Orochimaru", "p": 4 }
+  ]
+},
+
+{
+  "cat": "animecart",
+  "q": "Name 10 characters from Attack on Titan",
+  "items": [
+    { "n": "Eren", "p": 1 },
+    { "n": "Mikasa", "p": 1 },
+    { "n": "Armin", "p": 1 },
+    { "n": "Levi", "p": 1 },
+    { "n": "Erwin", "p": 2 },
+    { "n": "Historia", "p": 2 },
+    { "n": "Jean", "p": 2 },
+    { "n": "Connie", "p": 2 },
+    { "n": "Reiner", "p": 3 },
+    { "n": "Zeke", "p": 4 }
+  ]
+},
+
+{
+  "cat": "animecart",
+  "q": "Name 10 characters from Dragon Ball",
+  "items": [
+    { "n": "Goku", "p": 1 },
+    { "n": "Vegeta", "p": 1 },
+    { "n": "Gohan", "p": 1 },
+    { "n": "Piccolo", "p": 1 },
+    { "n": "Frieza", "p": 2 },
+    { "n": "Krillin", "p": 2 },
+    { "n": "Trunks", "p": 2 },
+    { "n": "Bulma", "p": 2 },
+    { "n": "Cell", "p": 3 },
+    { "n": "Majin Buu", "p": 4 }
+  ]
+},
+
+{
+  "cat": "animecart",
+  "q": "Name 10 characters from Dragon Ball",
+  "items": [
+    { "n": "Goku", "p": 1 },
+    { "n": "Vegeta", "p": 1 },
+    { "n": "Gohan", "p": 1 },
+    { "n": "Piccolo", "p": 1 },
+    { "n": "Frieza", "p": 2 },
+    { "n": "Krillin", "p": 2 },
+    { "n": "Trunks", "p": 2 },
+    { "n": "Bulma", "p": 2 },
+    { "n": "Cell", "p": 3 },
+    { "n": "Majin Buu", "p": 4 }
+  ]
+},
+
+{
+  "cat": "animecart",
+  "q": "Name 10 characters from Shrek",
+  "items": [
+    { "n": "Shrek", "p": 1 },
+    { "n": "Donkey", "p": 1 },
+    { "n": "Fiona", "p": 1 },
+    { "n": "Puss in Boots", "p": 1 },
+    { "n": "Lord Farquaad", "p": 2 },
+    { "n": "Dragon", "p": 2 },
+    { "n": "Gingy", "p": 2 },
+    { "n": "Pinocchio", "p": 2 },
+    { "n": "Big Bad Wolf", "p": 3 },
+    { "n": "Fairy Godmother", "p": 4 }
+  ]
+},
 
     {
       "cat": "travel",
@@ -202,12 +1263,157 @@
         { "n": "Madrid", "p": 1 },
         { "n": "Berlin", "p": 2 },
         { "n": "Tokyo", "p": 2 },
-        { "n": "Ottawa", "p": 2 },
-        { "n": "Nairobi", "p": 3 },
-        { "n": "Ulaanbaatar", "p": 3 },
+        { "n": "Athens", "p": 2 },
+        { "n": "Stockholm", "p": 2 },
+        { "n": "Ottawa", "p": 3 },
         { "n": "Nur-Sultan", "p": 4 }
       ]
     },
+
+    {
+  "cat": "travel",
+  "q": "Name 10 countries in Asia",
+  "items": [
+    { "n": "China", "p": 1 },
+    { "n": "Japan", "p": 1 },
+    { "n": "India", "p": 1 },
+    { "n": "Thailand", "p": 1 },
+    { "n": "South Korea", "p": 2 },
+    { "n": "Indonesia", "p": 2 },
+    { "n": "Vietnam", "p": 2 },
+    { "n": "Malaysia", "p": 2 },
+    { "n": "Kazakhstan", "p": 3 },
+    { "n": "Bhutan", "p": 4 }
+  ]
+},
+{
+  "cat": "travel",
+  "q": "Name 10 countries in Africa",
+  "items": [
+    { "n": "Egypt", "p": 1 },
+    { "n": "South Africa", "p": 1 },
+    { "n": "Nigeria", "p": 1 },
+    { "n": "Kenya", "p": 1 },
+    { "n": "Morocco", "p": 2 },
+    { "n": "Ghana", "p": 2 },
+    { "n": "Ethiopia", "p": 2 },
+    { "n": "Tanzania", "p": 2 },
+    { "n": "Namibia", "p": 3 },
+    { "n": "Djibouti", "p": 4 }
+  ]
+},
+{
+  "cat": "travel",
+  "q": "Name 10 countries in South America",
+  "items": [
+    { "n": "Brazil", "p": 1 },
+    { "n": "Argentina", "p": 1 },
+    { "n": "Chile", "p": 1 },
+    { "n": "Peru", "p": 1 },
+    { "n": "Colombia", "p": 2 },
+    { "n": "Venezuela", "p": 2 },
+    { "n": "Ecuador", "p": 2 },
+    { "n": "Bolivia", "p": 2 },
+    { "n": "Paraguay", "p": 3 },
+    { "n": "Suriname", "p": 4 }
+  ]
+},
+{
+  "cat": "travel",
+  "q": "Name 10 US states",
+  "items": [
+    { "n": "California", "p": 1 },
+    { "n": "Texas", "p": 1 },
+    { "n": "New York", "p": 1 },
+    { "n": "Florida", "p": 1 },
+    { "n": "Illinois", "p": 2 },
+    { "n": "Nevada", "p": 2 },
+    { "n": "Arizona", "p": 2 },
+    { "n": "Colorado", "p": 2 },
+    { "n": "Oregon", "p": 3 },
+    { "n": "Vermont", "p": 4 }
+  ]
+},
+{
+  "cat": "travel",
+  "q": "Name 10 famous landmarks",
+  "items": [
+    { "n": "Eiffel Tower", "p": 1 },
+    { "n": "Statue of Liberty", "p": 1 },
+    { "n": "Colosseum", "p": 1 },
+    { "n": "Great Wall of China", "p": 1 },
+    { "n": "Big Ben", "p": 2 },
+    { "n": "Taj Mahal", "p": 2 },
+    { "n": "Machu Picchu", "p": 2 },
+    { "n": "Christ the Redeemer", "p": 2 },
+    { "n": "Petra", "p": 3 },
+    { "n": "Angkor Wat", "p": 4 }
+  ]
+},
+{
+  "cat": "travel",
+  "q": "Name 10 islands",
+  "items": [
+    { "n": "Hawaii", "p": 1 },
+    { "n": "Bali", "p": 1 },
+    { "n": "Ibiza", "p": 1 },
+    { "n": "Sicily", "p": 1 },
+    { "n": "Crete", "p": 2 },
+    { "n": "Cyprus", "p": 2 },
+    { "n": "Malta", "p": 2 },
+    { "n": "Santorini", "p": 2 },
+    { "n": "Madagascar", "p": 3 },
+    { "n": "Fiji", "p": 4 }
+  ]
+},
+{
+  "cat": "travel",
+  "q": "Name 10 airlines",
+  "items": [
+    { "n": "Emirates", "p": 1 },
+    { "n": "Ryanair", "p": 1 },
+    { "n": "Lufthansa", "p": 1 },
+    { "n": "British Airways", "p": 1 },
+    { "n": "Air France", "p": 2 },
+    { "n": "Qatar Airways", "p": 2 },
+    { "n": "Turkish Airlines", "p": 2 },
+    { "n": "Delta", "p": 2 },
+    { "n": "KLM", "p": 3 },
+    { "n": "Finnair", "p": 4 }
+  ]
+},
+{
+  "cat": "travel",
+  "q": "Name 10 currencies",
+  "items": [
+    { "n": "Euro", "p": 1 },
+    { "n": "US Dollar", "p": 1 },
+    { "n": "British Pound", "p": 1 },
+    { "n": "Yen", "p": 1 },
+    { "n": "Swiss Franc", "p": 2 },
+    { "n": "Australian Dollar", "p": 2 },
+    { "n": "Canadian Dollar", "p": 2 },
+    { "n": "Turkish Lira", "p": 2 },
+    { "n": "Norwegian Krone", "p": 3 },
+    { "n": "Icelandic Krona", "p": 4 }
+  ]
+},
+{
+  "cat": "travel",
+  "q": "Name 10 languages spoken in the world",
+  "items": [
+    { "n": "English", "p": 1 },
+    { "n": "Spanish", "p": 1 },
+    { "n": "French", "p": 1 },
+    { "n": "German", "p": 1 },
+    { "n": "Italian", "p": 2 },
+    { "n": "Portuguese", "p": 2 },
+    { "n": "Arabic", "p": 2 },
+    { "n": "Hindi", "p": 2 },
+    { "n": "Swahili", "p": 3 },
+    { "n": "Icelandic", "p": 4 }
+  ]
+},
 
     {
       "cat": "home",
@@ -222,7 +1428,7 @@
         { "n": "Lamp", "p": 2 },
         { "n": "Rug", "p": 2 },
         { "n": "Houseplant", "p": 3 },
-        { "n": "Ottoman", "p": 4 }
+        { "n": "Fireplace", "p": 4 }
       ]
     },
     {
@@ -241,6 +1447,103 @@
         { "n": "Loofah", "p": 4 }
       ]
     },
+
+    {
+  "cat": "home",
+  "q": "Name 10 things you find in a kitchen",
+  "items": [
+    { "n": "Fridge", "p": 1 },
+    { "n": "Oven", "p": 1 },
+    { "n": "Sink", "p": 1 },
+    { "n": "Microwave", "p": 1 },
+    { "n": "Kettle", "p": 2 },
+    { "n": "Toaster", "p": 2 },
+    { "n": "Cutting board", "p": 2 },
+    { "n": "Pan", "p": 2 },
+    { "n": "Blender", "p": 3 },
+    { "n": "Slow cooker", "p": 4 }
+  ]
+},
+{
+  "cat": "home",
+  "q": "Name 10 things you find in a bedroom",
+  "items": [
+    { "n": "Bed", "p": 1 },
+    { "n": "Pillow", "p": 1 },
+    { "n": "Duvet", "p": 1 },
+    { "n": "Wardrobe", "p": 1 },
+    { "n": "Bedside table", "p": 2 },
+    { "n": "Lamp", "p": 2 },
+    { "n": "Mirror", "p": 2 },
+    { "n": "Alarm clock", "p": 2 },
+    { "n": "Chest of drawers", "p": 3 },
+    { "n": "Dressing table", "p": 4 }
+  ]
+},
+{
+  "cat": "home",
+  "q": "Name 10 cleaning items you find in a house",
+  "items": [
+    { "n": "Broom", "p": 1 },
+    { "n": "Mop", "p": 1 },
+    { "n": "Vacuum cleaner", "p": 1 },
+    { "n": "Dustpan", "p": 1 },
+    { "n": "Sponges", "p": 2 },
+    { "n": "Dish soap", "p": 2 },
+    { "n": "Bleach", "p": 2 },
+    { "n": "Cloths", "p": 2 },
+    { "n": "Rubber gloves", "p": 3 },
+    { "n": "Steam cleaner", "p": 4 }
+  ]
+},
+{
+  "cat": "home",
+  "q": "Name 10 household appliances",
+  "items": [
+    { "n": "Washing machine", "p": 1 },
+    { "n": "Dishwasher", "p": 1 },
+    { "n": "Fridge", "p": 1 },
+    { "n": "Oven", "p": 1 },
+    { "n": "Microwave", "p": 2 },
+    { "n": "Tumble dryer", "p": 2 },
+    { "n": "Toaster", "p": 2 },
+    { "n": "Kettle", "p": 2 },
+    { "n": "Coffee machine", "p": 3 },
+    { "n": "Air fryer", "p": 4 }
+  ]
+},
+{
+  "cat": "home",
+  "q": "Name 10 things in a garage",
+  "items": [
+    { "n": "Car", "p": 1 },
+    { "n": "Tools", "p": 1 },
+    { "n": "Bicycle", "p": 1 },
+    { "n": "Shelf", "p": 1 },
+    { "n": "Screwdriver", "p": 2 },
+    { "n": "Hammer", "p": 2 },
+    { "n": "Drill", "p": 2 },
+    { "n": "Paint cans", "p": 2 },
+    { "n": "Workbench", "p": 3 },
+    { "n": "Car jack", "p": 4 }
+  ]
+},
+{
+  "cat": "home",
+  "q": "Name 10 things in a garden",
+  "items": [
+    { "n": "Grass", "p": 1 },
+    { "n": "Flowers", "p": 1 },
+    { "n": "Trees", "p": 1 },
+    { "n": "Fence", "p": 1 },
+    { "n": "Hose", "p": 2 },
+    { "n": "Garden chair", "p": 2 },
+    { "n": "Table", "p": 2 },
+    { "n": "Barbecue", "p": 2 },
+    { "n": "Garden shed", "p": 3 },
+    { "n": "Pond", "p": 4 }
+  ]
+},
 
     {
       "cat": "science",
@@ -276,6 +1579,151 @@
     },
 
     {
+  "cat": "science",
+  "q": "Name 10 parts of the human body",
+  "items": [
+    { "n": "Heart", "p": 1 },
+    { "n": "Brain", "p": 1 },
+    { "n": "Lungs", "p": 1 },
+    { "n": "Liver", "p": 1 },
+    { "n": "Stomach", "p": 2 },
+    { "n": "Kidneys", "p": 2 },
+    { "n": "Skin", "p": 2 },
+    { "n": "Spine", "p": 2 },
+    { "n": "Retina", "p": 3 },
+    { "n": "Pancreas", "p": 4 }
+  ]
+},
+{
+  "cat": "science",
+  "q": "Name 10 types of scientists or science jobs",
+  "items": [
+    { "n": "Biologist", "p": 1 },
+    { "n": "Chemist", "p": 1 },
+    { "n": "Physicist", "p": 1 },
+    { "n": "Geologist", "p": 1 },
+    { "n": "Astronomer", "p": 2 },
+    { "n": "Zoologist", "p": 2 },
+    { "n": "Geneticist", "p": 2 },
+    { "n": "Meteorologist", "p": 2 },
+    { "n": "Astrophysicist", "p": 3 },
+    { "n": "Volcanologist", "p": 4 }
+  ]
+},
+{
+  "cat": "science",
+  "q": "Name 10 laboratory items",
+  "items": [
+    { "n": "Test tube", "p": 1 },
+    { "n": "Beaker", "p": 1 },
+    { "n": "Bunsen burner", "p": 1 },
+    { "n": "Microscope", "p": 1 },
+    { "n": "Pipette", "p": 2 },
+    { "n": "Petri dish", "p": 2 },
+    { "n": "Flask", "p": 2 },
+    { "n": "Thermometer", "p": 2 },
+    { "n": "Centrifuge", "p": 3 },
+    { "n": "Spectrometer", "p": 4 }
+  ]
+},
+{
+  "cat": "science",
+  "q": "Name 10 types of energy",
+  "items": [
+    { "n": "Kinetic energy", "p": 1 },
+    { "n": "Potential energy", "p": 1 },
+    { "n": "Thermal energy", "p": 1 },
+    { "n": "Chemical energy", "p": 1 },
+    { "n": "Electrical energy", "p": 2 },
+    { "n": "Nuclear energy", "p": 2 },
+    { "n": "Light energy", "p": 2 },
+    { "n": "Sound energy", "p": 2 },
+    { "n": "Elastic energy", "p": 3 },
+    { "n": "Gravitational energy", "p": 4 }
+  ]
+},
+{
+  "cat": "science",
+  "q": "Name 10 famous scientists",
+  "items": [
+    { "n": "Albert Einstein", "p": 1 },
+    { "n": "Isaac Newton", "p": 1 },
+    { "n": "Marie Curie", "p": 1 },
+    { "n": "Charles Darwin", "p": 1 },
+    { "n": "Nikola Tesla", "p": 2 },
+    { "n": "Galileo Galilei", "p": 2 },
+    { "n": "Stephen Hawking", "p": 2 },
+    { "n": "Louis Pasteur", "p": 2 },
+    { "n": "Rosalind Franklin", "p": 3 },
+    { "n": "Richard Feynman", "p": 4 }
+  ]
+},
+{
+  "cat": "science",
+  "q": "Name 10 things in space",
+  "items": [
+    { "n": "Star", "p": 1 },
+    { "n": "Planet", "p": 1 },
+    { "n": "Moon", "p": 1 },
+    { "n": "Asteroid", "p": 1 },
+    { "n": "Comet", "p": 2 },
+    { "n": "Galaxy", "p": 2 },
+    { "n": "Black hole", "p": 2 },
+    { "n": "Nebula", "p": 2 },
+    { "n": "Supernova", "p": 3 },
+    { "n": "Quasar", "p": 4 }
+  ]
+},
+{
+  "cat": "science",
+  "q": "Name 10 forces in physics or natural effects",
+  "items": [
+    { "n": "Gravity", "p": 1 },
+    { "n": "Friction", "p": 1 },
+    { "n": "Magnetism", "p": 1 },
+    { "n": "Tension", "p": 1 },
+    { "n": "Air resistance", "p": 2 },
+    { "n": "Lift", "p": 2 },
+    { "n": "Thrust", "p": 2 },
+    { "n": "Normal force", "p": 2 },
+    { "n": "Electromagnetic force", "p": 3 },
+    { "n": "Strong nuclear force", "p": 4 }
+  ]
+},
+{
+  "cat": "science",
+  "q": "Name 10 parts of a plant",
+  "items": [
+    { "n": "Roots", "p": 1 },
+    { "n": "Stem", "p": 1 },
+    { "n": "Leaves", "p": 1 },
+    { "n": "Flower", "p": 1 },
+    { "n": "Seed", "p": 2 },
+    { "n": "Fruit", "p": 2 },
+    { "n": "Chloroplast", "p": 2 },
+    { "n": "Petal", "p": 2 },
+    { "n": "Xylem", "p": 3 },
+    { "n": "Phloem", "p": 4 }
+  ]
+},
+{
+  "cat": "science",
+  "q": "Name 10 materials or substances",
+  "items": [
+    { "n": "Water", "p": 1 },
+    { "n": "Air", "p": 1 },
+    { "n": "Wood", "p": 1 },
+    { "n": "Plastic", "p": 1 },
+    { "n": "Glass", "p": 2 },
+    { "n": "Steel", "p": 2 },
+    { "n": "Rubber", "p": 2 },
+    { "n": "Cotton", "p": 2 },
+    { "n": "Graphene", "p": 3 },
+    { "n": "Titanium", "p": 4 }
+  ]
+},
+
+    {
       "cat": "music",
       "q": "Name 10 musical instruments",
       "items": [
@@ -306,6 +1754,411 @@
         { "n": "Bossa nova", "p": 3 },
         { "n": "Bluegrass", "p": 4 }
       ]
-    }
+    },
+
+    {
+  "cat": "music",
+  "q": "Name 10 famous singers or solo artists",
+  "items": [
+    { "n": "Michael Jackson", "p": 1 },
+    { "n": "Madonna", "p": 1 },
+    { "n": "Elvis Presley", "p": 1 },
+    { "n": "Adele", "p": 1 },
+    { "n": "Beyoncé", "p": 2 },
+    { "n": "Taylor Swift", "p": 2 },
+    { "n": "Ed Sheeran", "p": 2 },
+    { "n": "Bruno Mars", "p": 2 },
+    { "n": "Freddie Mercury", "p": 3 },
+    { "n": "Whitney Houston", "p": 4 }
+  ]
+},
+{
+  "cat": "music",
+  "q": "Name 10 famous bands or groups",
+  "items": [
+    { "n": "The Beatles", "p": 1 },
+    { "n": "Queen", "p": 1 },
+    { "n": "ABBA", "p": 1 },
+    { "n": "Coldplay", "p": 1 },
+    { "n": "The Rolling Stones", "p": 2 },
+    { "n": "Nirvana", "p": 2 },
+    { "n": "Linkin Park", "p": 2 },
+    { "n": "U2", "p": 2 },
+    { "n": "Metallica", "p": 3 },
+    { "n": "Pink Floyd", "p": 4 }
+  ]
+},
+{
+  "cat": "music",
+  "q": "Name 10 famous songs",
+  "items": [
+    { "n": "Bohemian Rhapsody", "p": 1 },
+    { "n": "Billie Jean", "p": 1 },
+    { "n": "Shape of You", "p": 1 },
+    { "n": "Rolling in the Deep", "p": 1 },
+    { "n": "Smells Like Teen Spirit", "p": 2 },
+    { "n": "Imagine", "p": 2 },
+    { "n": "Hey Jude", "p": 2 },
+    { "n": "Hotel California", "p": 2 },
+    { "n": "Sweet Child O’ Mine", "p": 3 },
+    { "n": "Stairway to Heaven", "p": 4 }
+  ]
+},
+{
+  "cat": "music",
+  "q": "Name 10 music production tools or studio items",
+  "items": [
+    { "n": "Microphone", "p": 1 },
+    { "n": "Headphones", "p": 1 },
+    { "n": "Mixer", "p": 1 },
+    { "n": "Speaker", "p": 1 },
+    { "n": "Audio interface", "p": 2 },
+    { "n": "MIDI keyboard", "p": 2 },
+    { "n": "DAW software", "p": 2 },
+    { "n": "Studio monitors", "p": 2 },
+    { "n": "Pop filter", "p": 3 },
+    { "n": "Synthesizer", "p": 4 }
+  ]
+},
+{
+  "cat": "music",
+  "q": "Name 10 dance styles",
+  "items": [
+    { "n": "Ballet", "p": 1 },
+    { "n": "Hip hop", "p": 1 },
+    { "n": "Salsa", "p": 1 },
+    { "n": "Tango", "p": 1 },
+    { "n": "Jazz dance", "p": 2 },
+    { "n": "Contemporary", "p": 2 },
+    { "n": "Breakdance", "p": 2 },
+    { "n": "Waltz", "p": 2 },
+    { "n": "Flamenco", "p": 3 },
+    { "n": "Krumping", "p": 4 }
+  ]
+},
+{
+  "cat": "music",
+  "q": "Name 10 music terms or concepts",
+  "items": [
+    { "n": "Beat", "p": 1 },
+    { "n": "Melody", "p": 1 },
+    { "n": "Rhythm", "p": 1 },
+    { "n": "Chord", "p": 1 },
+    { "n": "Harmony", "p": 2 },
+    { "n": "Tempo", "p": 2 },
+    { "n": "Pitch", "p": 2 },
+    { "n": "Dynamics", "p": 2 },
+    { "n": "Syncopation", "p": 3 },
+    { "n": "Polyphony", "p": 4 }
+  ]
+},
+
+{
+  "cat": "music",
+  "q": "Name 10 famous pop singers",
+  "items": [
+    { "n": "Taylor Swift", "p": 1 },
+    { "n": "Ariana Grande", "p": 1 },
+    { "n": "Justin Bieber", "p": 1 },
+    { "n": "Katy Perry", "p": 1 },
+    { "n": "Ed Sheeran", "p": 2 },
+    { "n": "Beyoncé", "p": 2 },
+    { "n": "Bruno Mars", "p": 2 },
+    { "n": "Rihanna", "p": 2 },
+    { "n": "Dua Lipa", "p": 3 },
+    { "n": "Lady Gaga", "p": 4 }
+  ]
+},
+{
+  "cat": "music",
+  "q": "Name 10 famous rock singers",
+  "items": [
+    { "n": "Freddie Mercury", "p": 1 },
+    { "n": "Mick Jagger", "p": 1 },
+    { "n": "Kurt Cobain", "p": 1 },
+    { "n": "Axl Rose", "p": 1 },
+    { "n": "Robert Plant", "p": 2 },
+    { "n": "Steven Tyler", "p": 2 },
+    { "n": "Bono", "p": 2 },
+    { "n": "Ozzy Osbourne", "p": 2 },
+    { "n": "Chris Cornell", "p": 3 },
+    { "n": "Eddie Vedder", "p": 4 }
+  ]
+},
+{
+  "cat": "music",
+  "q": "Name 10 hit songs from the 1990s",
+  "items": [
+    { "n": "Smells Like Teen Spirit", "p": 1 },
+    { "n": "Wonderwall", "p": 1 },
+    { "n": "My Heart Will Go On", "p": 1 },
+    { "n": "No Scrubs", "p": 1 },
+    { "n": "Baby One More Time", "p": 2 },
+    { "n": "Gangsta's Paradise", "p": 2 },
+    { "n": "Wannabe", "p": 2 },
+    { "n": "Enter Sandman", "p": 2 },
+    { "n": "Creep", "p": 3 },
+    { "n": "Torn", "p": 4 }
+  ]
+},
+{
+  "cat": "music",
+  "q": "Name 10 hit songs from the 2000s",
+  "items": [
+    { "n": "Crazy in Love", "p": 1 },
+    { "n": "Umbrella", "p": 1 },
+    { "n": "In the End", "p": 1 },
+    { "n": "Hips Don't Lie", "p": 1 },
+    { "n": "Poker Face", "p": 2 },
+    { "n": "Mr. Brightside", "p": 2 },
+    { "n": "Beautiful Day", "p": 2 },
+    { "n": "Hey Ya!", "p": 2 },
+    { "n": "Seven Nation Army", "p": 3 },
+    { "n": "Clocks", "p": 4 }
+  ]
+},
+{
+  "cat": "music",
+  "q": "Name 10 Disney songs",
+  "items": [
+    { "n": "Let It Go", "p": 1 },
+    { "n": "Hakuna Matata", "p": 1 },
+    { "n": "A Whole New World", "p": 1 },
+    { "n": "Circle of Life", "p": 1 },
+    { "n": "Under the Sea", "p": 2 },
+    { "n": "Be Our Guest", "p": 2 },
+    { "n": "How Far I'll Go", "p": 2 },
+    { "n": "You’ve Got a Friend in Me", "p": 2 },
+    { "n": "Colors of the Wind", "p": 3 },
+    { "n": "Part of Your World", "p": 4 }
+  ]
+},
+{
+  "cat": "music",
+  "q": "Name 10 one-hit wonder songs",
+  "items": [
+    { "n": "Macarena", "p": 1 },
+    { "n": "Take On Me", "p": 1 },
+    { "n": "Gangnam Style", "p": 1 },
+    { "n": "Call Me Maybe", "p": 1 },
+    { "n": "What Is Love", "p": 2 },
+    { "n": "Somebody That I Used to Know", "p": 2 },
+    { "n": "Mambo No. 5", "p": 2 },
+    { "n": "Blue (Da Ba Dee)", "p": 2 },
+    { "n": "Torn", "p": 3 },
+    { "n": "Ice Ice Baby", "p": 4 }
+  ]
+},
+{
+  "cat": "music",
+  "q": "Name 10 famous hip-hop or rap artists",
+  "items": [
+    { "n": "Eminem", "p": 1 },
+    { "n": "Drake", "p": 1 },
+    { "n": "Kanye West", "p": 1 },
+    { "n": "Jay-Z", "p": 1 },
+    { "n": "Travis Scott", "p": 2 },
+    { "n": "Kendrick Lamar", "p": 2 },
+    { "n": "Nicki Minaj", "p": 2 },
+    { "n": "Snoop Dogg", "p": 2 },
+    { "n": "Lil Wayne", "p": 3 },
+    { "n": "50 Cent", "p": 4 }
+  ]
+},
+{
+  "cat": "music",
+  "q": "Name 10 songs people play at parties",
+  "items": [
+    { "n": "Uptown Funk", "p": 1 },
+    { "n": "Despacito", "p": 1 },
+    { "n": "Dancing Queen", "p": 1 },
+    { "n": "Party Rock Anthem", "p": 1 },
+    { "n": "Titanium", "p": 2 },
+    { "n": "Yeah!", "p": 2 },
+    { "n": "Happy", "p": 2 },
+    { "n": "Shake It Off", "p": 2 },
+    { "n": "Don't Stop Believin'", "p": 3 },
+    { "n": "I Gotta Feeling", "p": 4 }
+  ]
+},
+{
+  "cat": "nsfw",
+  "q": "Name 10 sex positions",
+  "items": [
+    { "n": "Missionary", "p": 1 },
+    { "n": "Doggy", "p": 1 },
+    { "n": "Cowgirl", "p": 1 },
+    { "n": "69", "p": 1 },
+    { "n": "Prone bone", "p": 2 },
+    { "n": "The lotus", "p": 2 },
+    { "n": "Wheel barrow", "p": 2 },
+    { "n": "Screw", "p": 2 },
+    { "n": "Crab'", "p": 3 },
+    { "n": "Piledriver", "p": 4 }
+  ]
+},
+{
+  "cat": "nsfw",
+  "q": "Name 10 slang terms for having sex",
+  "items": [
+    { "n": "Hook up", "p": 1 },
+    { "n": "Sleep together", "p": 1 },
+    { "n": "Get laid", "p": 1 },
+    { "n": "Bang", "p": 1 },
+    { "n": "Smash", "p": 2 },
+    { "n": "Netflix and chill", "p": 2 },
+    { "n": "Bump uglies", "p": 2 },
+    { "n": "Knock boots", "p": 2 },
+    { "n": "Get it on", "p": 3 },
+    { "n": "Make whoopee", "p": 4 }
+  ]
+},
+{
+  "cat": "nsfw",
+  "q": "Name 10 male genitals slang terms",
+  "items": [
+    { "n": "Dick", "p": 1 },
+    { "n": "Cock", "p": 1 },
+    { "n": "Johnson", "p": 1 },
+    { "n": "Wang", "p": 1 },
+    { "n": "Schlong", "p": 2 },
+    { "n": "One-eyed trouser snake", "p": 2 },
+    { "n": "Manhood", "p": 2 },
+    { "n": "Pecker", "p": 2 },
+    { "n": "Purple-headed yogurt slinger", "p": 3 },
+    { "n": "Third leg", "p": 4 }
+  ]
+},
+{
+    "cat": "nsfw",
+    "q": "Name 10 female genitals slang terms",
+    "items": [
+    { "n": "Pussy", "p": 1 },
+    { "n": "Cunt", "p": 1 },
+    { "n": "Vagina", "p": 1 },
+    { "n": "Snatch", "p": 1 },
+    { "n": "Beaver", "p": 2 },
+    { "n": "Box", "p": 2 },
+    { "n": "Coochie", "p": 2 },
+    { "n": "Minge", "p": 2 },
+    { "n": "Muff", "p": 3 },
+    { "n": "Hoo-ha", "p": 2 }
+]
+},
+
+  {
+    "cat": "nsfw",
+    "q": "Name 10 things that would make a first date awkward",
+    "items": [
+      { "n": "Arriving very late", "p": 1 },
+      { "n": "Talking about exes", "p": 1 },
+      { "n": "Constant phone checking", "p": 1 },
+      { "n": "Bad table manners", "p": 1 },
+      { "n": "Arguing with the waiter", "p": 2 },
+      { "n": "Spilling food or drink", "p": 2 },
+      { "n": "Oversharing personal drama", "p": 2 },
+      { "n": "Not asking any questions back", "p": 2 },
+      { "n": "Forgetting their name", "p": 3 },
+      { "n": "Bringing a friend along", "p": 4 }
+    ]
+  },
+  {
+    "cat": "nsfw",
+    "q": "Name 10 signs someone is flirting with you",
+    "items": [
+      { "n": "Prolonged eye contact", "p": 1 },
+      { "n": "Smiling a lot", "p": 1 },
+      { "n": "Playful teasing", "p": 1 },
+      { "n": "Leaning in when talking", "p": 1 },
+      { "n": "Finding excuses to talk", "p": 2 },
+      { "n": "Light touching on the arm", "p": 2 },
+      { "n": "Laughing at your jokes", "p": 2 },
+      { "n": "Mirroring your body language", "p": 2 },
+      { "n": "Asking personal questions", "p": 3 },
+      { "n": "Staying close when they don’t need to", "p": 4 }
+    ]
+  },
+  {
+    "cat": "nsfw",
+    "q": "Name 10 things people do when they are trying to impress someone",
+    "items": [
+      { "n": "Dressing up nicely", "p": 1 },
+      { "n": "Showing off skills", "p": 1 },
+      { "n": "Making jokes", "p": 1 },
+      { "n": "Talking about achievements", "p": 1 },
+      { "n": "Pretending to be confident", "p": 2 },
+      { "n": "Bringing up cool hobbies", "p": 2 },
+      { "n": "Acting more interesting than usual", "p": 2 },
+      { "n": "Buying drinks or food", "p": 2 },
+      { "n": "Trying to look calm under pressure", "p": 3 },
+      { "n": "Name-dropping famous people", "p": 4 }
+    ]
+  },
+  {
+    "cat": "nsfw",
+    "q": "Name 10 romantic movie clichés",
+    "items": [
+      { "n": "Running through an airport", "p": 1 },
+      { "n": "Accidental kiss", "p": 1 },
+      { "n": "Enemies to lovers", "p": 1 },
+      { "n": "Love triangle", "p": 1 },
+      { "n": "Rain confession scene", "p": 2 },
+      { "n": "Big dramatic apology", "p": 2 },
+      { "n": "Fake dating that becomes real", "p": 2 },
+      { "n": "One bed trope", "p": 2 },
+      { "n": "Interrupting wedding speech", "p": 3 },
+      { "n": "Grand gesture at the last second", "p": 4 }
+    ]
+  },
+  {
+    "cat": "nsfw",
+    "q": "Name 10 places people have sex at",
+    "items": [
+      { "n": "Bed", "p": 1 },
+      { "n": "Car", "p": 1 },
+      { "n": "Hotel room", "p": 1 },
+      { "n": "Bathroom", "p": 1 },
+      { "n": "Beach", "p": 2 },
+      { "n": "Park", "p": 2 },
+      { "n": "Tent", "p": 2 },
+      { "n": "Office", "p": 2 },
+      { "n": "Rooftop", "p": 3 },
+      { "n": "Airplane bathroom", "p": 4 }
+    ]
+  },
+
+  {
+    "cat": "nsfw",
+    "q": "Name 10 sex aid products",
+    "items": [
+      { "n": "Vibrator", "p": 1 },
+      { "n": "Dildo", "p": 1 },
+      { "n": "Fleshlight", "p": 1 },
+      { "n": "Pump", "p": 1 },
+      { "n": "Cock ring", "p": 2 },
+      { "n": "Butt plug", "p": 2 },
+      { "n": "Anal beads", "p": 2 },
+      { "n": "Kegel", "p": 2 },
+      { "n": "Sex doll", "p": 3 },
+      { "n": "Vibrating egg", "p": 4 }
+    ]
+  },
+
+  {
+    "cat": "nsfw",
+    "q": "Name 10 contraception methods",
+  "items": [
+    { "n": "Condoms", "p": 1 },
+    { "n": "Birth control pill", "p": 1 },
+    { "n": "Contraceptive implant", "p": 2 },
+    { "n": "Intrauterine device (IUD)", "p": 2 },
+    { "n": "Contraceptive injection", "p": 2 },
+    { "n": "Contraceptive patch", "p": 2 },
+    { "n": "Contraceptive vaginal ring", "p": 3 },
+    { "n": "Diaphragm", "p": 3 },
+    { "n": "Pull out method", "p": 3 },
+    { "n": "Abstinence", "p": 4 }
+    ]
+  }
   ]
 }
