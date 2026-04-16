@@ -287,7 +287,326 @@
     { "n": "Pastrami", "p": 4 }
   ]
 },
-
+{
+  "cat": "food",
+  "q": "Name 10 types of cuisine",
+  "items": [
+    { "n": "Italian", "p": 1 },
+    { "n": "Chinese", "p": 1 },
+    { "n": "Indian", "p": 1 },
+    { "n": "Mexican", "p": 1 },
+    { "n": "Japanese", "p": 2 },
+    { "n": "Thai", "p": 2 },
+    { "n": "French", "p": 2 },
+    { "n": "Greek", "p": 2 },
+    { "n": "Lebanese", "p": 3 },
+    { "n": "Peruvian", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 things you might put on toast",
+  "items": [
+    { "n": "Butter", "p": 1 },
+    { "n": "Jam", "p": 1 },
+    { "n": "Peanut butter", "p": 1 },
+    { "n": "Marmite", "p": 1 },
+    { "n": "Avocado", "p": 2 },
+    { "n": "Honey", "p": 2 },
+    { "n": "Cream cheese", "p": 2 },
+    { "n": "Beans", "p": 2 },
+    { "n": "Smoked salmon", "p": 3 },
+    { "n": "Ricotta", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 herbs and spices",
+  "items": [
+    { "n": "Pepper", "p": 1 },
+    { "n": "Garlic", "p": 1 },
+    { "n": "Basil", "p": 1 },
+    { "n": "Chilli", "p": 1 },
+    { "n": "Cumin", "p": 2 },
+    { "n": "Paprika", "p": 2 },
+    { "n": "Oregano", "p": 2 },
+    { "n": "Turmeric", "p": 2 },
+    { "n": "Cardamom", "p": 3 },
+    { "n": "Fenugreek", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 types of cake",
+  "items": [
+    { "n": "Chocolate cake", "p": 1 },
+    { "n": "Carrot cake", "p": 1 },
+    { "n": "Cheesecake", "p": 1 },
+    { "n": "Victoria sponge", "p": 1 },
+    { "n": "Red velvet", "p": 2 },
+    { "n": "Lemon drizzle", "p": 2 },
+    { "n": "Battenberg", "p": 2 },
+    { "n": "Black forest", "p": 2 },
+    { "n": "Baked Alaska", "p": 3 },
+    { "n": "Dobos torte", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 things you might find in a sushi restaurant",
+  "items": [
+    { "n": "Rice", "p": 1 },
+    { "n": "Salmon", "p": 1 },
+    { "n": "Tuna", "p": 1 },
+    { "n": "Soy sauce", "p": 1 },
+    { "n": "Wasabi", "p": 2 },
+    { "n": "Miso soup", "p": 2 },
+    { "n": "Edamame", "p": 2 },
+    { "n": "Prawn tempura", "p": 2 },
+    { "n": "Pickled ginger", "p": 3 },
+    { "n": "Uni", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 cocktails",
+  "items": [
+    { "n": "Mojito", "p": 1 },
+    { "n": "Margarita", "p": 1 },
+    { "n": "Pina Colada", "p": 1 },
+    { "n": "Cosmopolitan", "p": 1 },
+    { "n": "Negroni", "p": 2 },
+    { "n": "Old Fashioned", "p": 2 },
+    { "n": "Espresso Martini", "p": 2 },
+    { "n": "Daiquiri", "p": 2 },
+    { "n": "Aperol Spritz", "p": 3 },
+    { "n": "Clover Club", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 types of soup",
+  "items": [
+    { "n": "Tomato soup", "p": 1 },
+    { "n": "Chicken soup", "p": 1 },
+    { "n": "Minestrone", "p": 1 },
+    { "n": "Pea soup", "p": 1 },
+    { "n": "French onion", "p": 2 },
+    { "n": "Clam chowder", "p": 2 },
+    { "n": "Gazpacho", "p": 2 },
+    { "n": "Ramen", "p": 2 },
+    { "n": "Bouillabaisse", "p": 3 },
+    { "n": "Mulligatawny", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 snack foods",
+  "items": [
+    { "n": "Crisps", "p": 1 },
+    { "n": "Chocolate", "p": 1 },
+    { "n": "Popcorn", "p": 1 },
+    { "n": "Nuts", "p": 1 },
+    { "n": "Pretzels", "p": 2 },
+    { "n": "Crackers", "p": 2 },
+    { "n": "Rice cakes", "p": 2 },
+    { "n": "Granola bar", "p": 2 },
+    { "n": "Edamame", "p": 3 },
+    { "n": "Pork scratchings", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 things you might find at a BBQ",
+  "items": [
+    { "n": "Burger", "p": 1 },
+    { "n": "Sausage", "p": 1 },
+    { "n": "Coleslaw", "p": 1 },
+    { "n": "Corn on the cob", "p": 1 },
+    { "n": "Chicken wings", "p": 2 },
+    { "n": "Potato salad", "p": 2 },
+    { "n": "Ribs", "p": 2 },
+    { "n": "Kebab", "p": 2 },
+    { "n": "Pulled pork", "p": 3 },
+    { "n": "Chimichurri", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 types of chocolate",
+  "items": [
+    { "n": "Milk chocolate", "p": 1 },
+    { "n": "Dark chocolate", "p": 1 },
+    { "n": "White chocolate", "p": 1 },
+    { "n": "Truffle", "p": 1 },
+    { "n": "Praline", "p": 2 },
+    { "n": "Fudge", "p": 2 },
+    { "n": "Ganache", "p": 2 },
+    { "n": "Nougat", "p": 2 },
+    { "n": "Gianduja", "p": 3 },
+    { "n": "Marzipan", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 nuts",
+  "items": [
+    { "n": "Peanut", "p": 1 },
+    { "n": "Almond", "p": 1 },
+    { "n": "Walnut", "p": 1 },
+    { "n": "Cashew", "p": 1 },
+    { "n": "Pistachio", "p": 2 },
+    { "n": "Hazelnut", "p": 2 },
+    { "n": "Pecan", "p": 2 },
+    { "n": "Brazil nut", "p": 2 },
+    { "n": "Macadamia", "p": 3 },
+    { "n": "Pine nut", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 things you might order at a Chinese takeaway",
+  "items": [
+    { "n": "Fried rice", "p": 1 },
+    { "n": "Noodles", "p": 1 },
+    { "n": "Sweet and sour chicken", "p": 1 },
+    { "n": "Spring rolls", "p": 1 },
+    { "n": "Dim sum", "p": 2 },
+    { "n": "Kung pao chicken", "p": 2 },
+    { "n": "Peking duck", "p": 2 },
+    { "n": "Prawn crackers", "p": 2 },
+    { "n": "Mapo tofu", "p": 3 },
+    { "n": "Char siu", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 things you might order at an Indian restaurant",
+  "items": [
+    { "n": "Curry", "p": 1 },
+    { "n": "Naan", "p": 1 },
+    { "n": "Rice", "p": 1 },
+    { "n": "Samosa", "p": 1 },
+    { "n": "Tikka masala", "p": 2 },
+    { "n": "Biryani", "p": 2 },
+    { "n": "Pakora", "p": 2 },
+    { "n": "Dhal", "p": 2 },
+    { "n": "Raita", "p": 3 },
+    { "n": "Kheer", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 condiments or sauces",
+  "items": [
+    { "n": "Ketchup", "p": 1 },
+    { "n": "Mayonnaise", "p": 1 },
+    { "n": "Mustard", "p": 1 },
+    { "n": "Soy sauce", "p": 1 },
+    { "n": "Hot sauce", "p": 2 },
+    { "n": "Barbecue sauce", "p": 2 },
+    { "n": "Pesto", "p": 2 },
+    { "n": "Hollandaise", "p": 2 },
+    { "n": "Sriracha", "p": 3 },
+    { "n": "Gochujang", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 things you might find on a cheeseboard",
+  "items": [
+    { "n": "Cheddar", "p": 1 },
+    { "n": "Brie", "p": 1 },
+    { "n": "Grapes", "p": 1 },
+    { "n": "Crackers", "p": 1 },
+    { "n": "Blue cheese", "p": 2 },
+    { "n": "Chutney", "p": 2 },
+    { "n": "Walnuts", "p": 2 },
+    { "n": "Figs", "p": 2 },
+    { "n": "Quince paste", "p": 3 },
+    { "n": "Truffle honey", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 street foods from around the world",
+  "items": [
+    { "n": "Hot dog", "p": 1 },
+    { "n": "Tacos", "p": 1 },
+    { "n": "Crepe", "p": 1 },
+    { "n": "Kebab", "p": 1 },
+    { "n": "Pad thai", "p": 2 },
+    { "n": "Falafel", "p": 2 },
+    { "n": "Churros", "p": 2 },
+    { "n": "Empanada", "p": 2 },
+    { "n": "Banh mi", "p": 3 },
+    { "n": "Takoyaki", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 things you might find at a bakery",
+  "items": [
+    { "n": "Bread", "p": 1 },
+    { "n": "Croissant", "p": 1 },
+    { "n": "Muffin", "p": 1 },
+    { "n": "Doughnut", "p": 1 },
+    { "n": "Cinnamon roll", "p": 2 },
+    { "n": "Scone", "p": 2 },
+    { "n": "Eclair", "p": 2 },
+    { "n": "Pain au chocolat", "p": 2 },
+    { "n": "Kouign-amann", "p": 3 },
+    { "n": "Canelé", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 types of curry",
+  "items": [
+    { "n": "Tikka masala", "p": 1 },
+    { "n": "Korma", "p": 1 },
+    { "n": "Vindaloo", "p": 1 },
+    { "n": "Thai green curry", "p": 1 },
+    { "n": "Madras", "p": 2 },
+    { "n": "Rogan josh", "p": 2 },
+    { "n": "Massaman", "p": 2 },
+    { "n": "Balti", "p": 2 },
+    { "n": "Rendang", "p": 3 },
+    { "n": "Dhansak", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 things you might eat at Christmas dinner",
+  "items": [
+    { "n": "Turkey", "p": 1 },
+    { "n": "Roast potatoes", "p": 1 },
+    { "n": "Brussels sprouts", "p": 1 },
+    { "n": "Stuffing", "p": 1 },
+    { "n": "Gravy", "p": 2 },
+    { "n": "Pigs in blankets", "p": 2 },
+    { "n": "Cranberry sauce", "p": 2 },
+    { "n": "Parsnips", "p": 2 },
+    { "n": "Christmas pudding", "p": 3 },
+    { "n": "Bread sauce", "p": 4 }
+  ]
+},
+{
+  "cat": "food",
+  "q": "Name 10 popular pasta dishes",
+  "items": [
+    { "n": "Bolognese", "p": 1 },
+    { "n": "Carbonara", "p": 1 },
+    { "n": "Lasagne", "p": 1 },
+    { "n": "Mac and cheese", "p": 1 },
+    { "n": "Arrabiata", "p": 2 },
+    { "n": "Puttanesca", "p": 2 },
+    { "n": "Cacio e pepe", "p": 2 },
+    { "n": "Alfredo", "p": 2 },
+    { "n": "Amatriciana", "p": 3 },
+    { "n": "Aglio e olio", "p": 4 }
+  ]
+},
     {
       "cat": "sport",
       "q": "Name 10 sports played with a ball",
@@ -855,6 +1174,294 @@
     { "n": "Quetzalcoatlus", "p": 4 }
   ]
 },
+{
+  "cat": "nature",
+  "q": "Name 10 sea mammals",
+  "items": [
+    { "n": "Dolphin", "p": 1 },
+    { "n": "Whale", "p": 1 },
+    { "n": "Seal", "p": 1 },
+    { "n": "Sea lion", "p": 1 },
+    { "n": "Walrus", "p": 2 },
+    { "n": "Otter", "p": 2 },
+    { "n": "Porpoise", "p": 2 },
+    { "n": "Manatee", "p": 2 },
+    { "n": "Dugong", "p": 3 },
+    { "n": "Narwhal", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 primates",
+  "items": [
+    { "n": "Chimpanzee", "p": 1 },
+    { "n": "Gorilla", "p": 1 },
+    { "n": "Orangutan", "p": 1 },
+    { "n": "Baboon", "p": 1 },
+    { "n": "Gibbon", "p": 2 },
+    { "n": "Lemur", "p": 2 },
+    { "n": "Macaque", "p": 2 },
+    { "n": "Mandrill", "p": 2 },
+    { "n": "Tamarin", "p": 3 },
+    { "n": "Tarsier", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 animals with shells",
+  "items": [
+    { "n": "Snail", "p": 1 },
+    { "n": "Crab", "p": 1 },
+    { "n": "Tortoise", "p": 1 },
+    { "n": "Oyster", "p": 1 },
+    { "n": "Lobster", "p": 2 },
+    { "n": "Clam", "p": 2 },
+    { "n": "Mussel", "p": 2 },
+    { "n": "Hermit crab", "p": 2 },
+    { "n": "Nautilus", "p": 3 },
+    { "n": "Horseshoe crab", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 nocturnal animals",
+  "items": [
+    { "n": "Owl", "p": 1 },
+    { "n": "Bat", "p": 1 },
+    { "n": "Fox", "p": 1 },
+    { "n": "Hedgehog", "p": 1 },
+    { "n": "Badger", "p": 2 },
+    { "n": "Raccoon", "p": 2 },
+    { "n": "Moth", "p": 2 },
+    { "n": "Skunk", "p": 2 },
+    { "n": "Firefly", "p": 3 },
+    { "n": "Aye-aye", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 types of mushroom",
+  "items": [
+    { "n": "Button mushroom", "p": 1 },
+    { "n": "Portobello", "p": 1 },
+    { "n": "Shiitake", "p": 1 },
+    { "n": "Oyster mushroom", "p": 1 },
+    { "n": "Chanterelle", "p": 2 },
+    { "n": "Porcini", "p": 2 },
+    { "n": "Truffle", "p": 2 },
+    { "n": "Morel", "p": 2 },
+    { "n": "Fly agaric", "p": 3 },
+    { "n": "Enoki", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 animals that live underground",
+  "items": [
+    { "n": "Mole", "p": 1 },
+    { "n": "Rabbit", "p": 1 },
+    { "n": "Worm", "p": 1 },
+    { "n": "Badger", "p": 1 },
+    { "n": "Prairie dog", "p": 2 },
+    { "n": "Groundhog", "p": 2 },
+    { "n": "Ant", "p": 2 },
+    { "n": "Fox", "p": 2 },
+    { "n": "Naked mole rat", "p": 3 },
+    { "n": "Aardvark", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 big cats",
+  "items": [
+    { "n": "Lion", "p": 1 },
+    { "n": "Tiger", "p": 1 },
+    { "n": "Leopard", "p": 1 },
+    { "n": "Cheetah", "p": 1 },
+    { "n": "Jaguar", "p": 2 },
+    { "n": "Puma", "p": 2 },
+    { "n": "Snow leopard", "p": 2 },
+    { "n": "Cougar", "p": 2 },
+    { "n": "Clouded leopard", "p": 3 },
+    { "n": "Ocelot", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 animals found in Australia",
+  "items": [
+    { "n": "Kangaroo", "p": 1 },
+    { "n": "Koala", "p": 1 },
+    { "n": "Crocodile", "p": 1 },
+    { "n": "Shark", "p": 1 },
+    { "n": "Wombat", "p": 2 },
+    { "n": "Platypus", "p": 2 },
+    { "n": "Emu", "p": 2 },
+    { "n": "Dingo", "p": 2 },
+    { "n": "Quokka", "p": 3 },
+    { "n": "Cassowary", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 amphibians",
+  "items": [
+    { "n": "Frog", "p": 1 },
+    { "n": "Toad", "p": 1 },
+    { "n": "Salamander", "p": 1 },
+    { "n": "Newt", "p": 1 },
+    { "n": "Tree frog", "p": 2 },
+    { "n": "Axolotl", "p": 2 },
+    { "n": "Bullfrog", "p": 2 },
+    { "n": "Caecilian", "p": 2 },
+    { "n": "Mudpuppy", "p": 3 },
+    { "n": "Olm", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 endangered animals",
+  "items": [
+    { "n": "Tiger", "p": 1 },
+    { "n": "Panda", "p": 1 },
+    { "n": "Rhino", "p": 1 },
+    { "n": "Elephant", "p": 1 },
+    { "n": "Snow leopard", "p": 2 },
+    { "n": "Gorilla", "p": 2 },
+    { "n": "Sea turtle", "p": 2 },
+    { "n": "Orangutan", "p": 2 },
+    { "n": "Vaquita", "p": 3 },
+    { "n": "Kakapo", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 types of grass or plant",
+  "items": [
+    { "n": "Bamboo", "p": 1 },
+    { "n": "Grass", "p": 1 },
+    { "n": "Fern", "p": 1 },
+    { "n": "Cactus", "p": 1 },
+    { "n": "Moss", "p": 2 },
+    { "n": "Ivy", "p": 2 },
+    { "n": "Reed", "p": 2 },
+    { "n": "Heather", "p": 2 },
+    { "n": "Sedge", "p": 3 },
+    { "n": "Horsetail", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 animals with stripes or spots",
+  "items": [
+    { "n": "Zebra", "p": 1 },
+    { "n": "Tiger", "p": 1 },
+    { "n": "Leopard", "p": 1 },
+    { "n": "Giraffe", "p": 1 },
+    { "n": "Cheetah", "p": 2 },
+    { "n": "Dalmatian", "p": 2 },
+    { "n": "Ladybird", "p": 2 },
+    { "n": "Clownfish", "p": 2 },
+    { "n": "Okapi", "p": 3 },
+    { "n": "Fallow deer", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 venomous animals",
+  "items": [
+    { "n": "Snake", "p": 1 },
+    { "n": "Scorpion", "p": 1 },
+    { "n": "Jellyfish", "p": 1 },
+    { "n": "Spider", "p": 1 },
+    { "n": "Bee", "p": 2 },
+    { "n": "Wasp", "p": 2 },
+    { "n": "Stonefish", "p": 2 },
+    { "n": "Cone snail", "p": 2 },
+    { "n": "Blue-ringed octopus", "p": 3 },
+    { "n": "Platypus", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 animals that live in rivers",
+  "items": [
+    { "n": "Salmon", "p": 1 },
+    { "n": "Frog", "p": 1 },
+    { "n": "Otter", "p": 1 },
+    { "n": "Crocodile", "p": 1 },
+    { "n": "Beaver", "p": 2 },
+    { "n": "Hippo", "p": 2 },
+    { "n": "Crayfish", "p": 2 },
+    { "n": "Kingfisher", "p": 2 },
+    { "n": "River dolphin", "p": 3 },
+    { "n": "Piranha", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 types of cloud",
+  "items": [
+    { "n": "Cumulus", "p": 1 },
+    { "n": "Stratus", "p": 1 },
+    { "n": "Cirrus", "p": 1 },
+    { "n": "Nimbus", "p": 1 },
+    { "n": "Cumulonimbus", "p": 2 },
+    { "n": "Altostratus", "p": 2 },
+    { "n": "Altocumulus", "p": 2 },
+    { "n": "Stratocumulus", "p": 2 },
+    { "n": "Cirrostratus", "p": 3 },
+    { "n": "Lenticular", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 African animals",
+  "items": [
+    { "n": "Lion", "p": 1 },
+    { "n": "Elephant", "p": 1 },
+    { "n": "Zebra", "p": 1 },
+    { "n": "Giraffe", "p": 1 },
+    { "n": "Cheetah", "p": 2 },
+    { "n": "Hippo", "p": 2 },
+    { "n": "Gorilla", "p": 2 },
+    { "n": "Wildebeest", "p": 2 },
+    { "n": "Aardvark", "p": 3 },
+    { "n": "Pangolin", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 animals with long necks or legs",
+  "items": [
+    { "n": "Giraffe", "p": 1 },
+    { "n": "Flamingo", "p": 1 },
+    { "n": "Ostrich", "p": 1 },
+    { "n": "Heron", "p": 1 },
+    { "n": "Camel", "p": 2 },
+    { "n": "Stork", "p": 2 },
+    { "n": "Llama", "p": 2 },
+    { "n": "Crane", "p": 2 },
+    { "n": "Gerenuk", "p": 3 },
+    { "n": "Jabiru", "p": 4 }
+  ]
+},
+{
+  "cat": "nature",
+  "q": "Name 10 animals that lay eggs",
+  "items": [
+    { "n": "Chicken", "p": 1 },
+    { "n": "Snake", "p": 1 },
+    { "n": "Crocodile", "p": 1 },
+    { "n": "Turtle", "p": 1 },
+    { "n": "Frog", "p": 2 },
+    { "n": "Penguin", "p": 2 },
+    { "n": "Salmon", "p": 2 },
+    { "n": "Platypus", "p": 2 },
+    { "n": "Ostrich", "p": 3 },
+    { "n": "Echidna", "p": 4 }
+  ]
+},
 
     {
       "cat": "tvfilm",
@@ -1234,6 +1841,22 @@
     { "n": "Pinocchio", "p": 2 },
     { "n": "Big Bad Wolf", "p": 3 },
     { "n": "Fairy Godmother", "p": 4 }
+  ]
+},
+{
+  "cat": "animecart",
+  "q": "Name 10 legendary Pokemon",
+  "items": [
+    { "n": "Mewtwo", "p": 1 },
+    { "n": "Lugia", "p": 1 },
+    { "n": "Ho-Oh", "p": 1 },
+    { "n": "Rayquaza", "p": 1 },
+    { "n": "Dialga", "p": 2 },
+    { "n": "Palkia", "p": 2 },
+    { "n": "Giratina", "p": 2 },
+    { "n": "Arceus", "p": 2 },
+    { "n": "Zygarde", "p": 3 },
+    { "n": "Eternatus", "p": 4 }
   ]
 },
 

@@ -3,7 +3,7 @@
   "short_name": "NameTen",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#7aa98a",
+  "background_color": "#d4a5a5",
   "theme_color": "#d4a5a5",
   "icons": [
     {
