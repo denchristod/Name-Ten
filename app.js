@@ -59,58 +59,52 @@ let state = {
   timePerRound: 90
 };
 
-let musicStarted = false;
+let audioUnlocked = false;
 let musicMuted = false;
 
-let audioUnlocked = false;
+const bgMusic = document.getElementById("bgMusic");
+const clickSound = document.getElementById("clickSound");
+const tickSound = document.getElementById("tickSound");
+const alarmSound = document.getElementById("alarmSound");
+const winSound = document.getElementById("winSound");
 
-function unlockAudio() {
+function unlockAudioOnce() {
   if (audioUnlocked) return;
+  audioUnlocked = true;
 
-  const sounds = [
-    document.getElementById("bgMusic"),
-    document.getElementById("clickSound"),
-    document.getElementById("tickSound"),
-    document.getElementById("alarmSound"),
-    document.getElementById("winSound")
-  ];
+  const sounds = [bgMusic, clickSound, tickSound, alarmSound, winSound];
 
-  sounds.forEach(audio => {
-    if (!audio) return;
-
-    audio.volume = audio.volume || 1;
-
-    const playPromise = audio.play();
-    if (playPromise !== undefined) {
-      playPromise
-        .then(() => {
-          audio.pause();
-          audio.currentTime = 0;
-        })
-        .catch(() => {});
-    }
+  sounds.forEach(s => {
+    if (!s) return;
+    s.volume = s.volume ?? 1;
+    s.play().then(() => {
+      s.pause();
+      s.currentTime = 0;
+    }).catch(() => {});
   });
 
-  audioUnlocked = true;
-  startMusic();
-  console.log("Audio unlocked");
+  // ONLY start music after unlock AND if not muted
+  if (!musicMuted) {
+    startMusic();
+  }
 }
 
-document.addEventListener("touchstart", unlockAudio, { once: true });
-document.addEventListener("click", unlockAudio, { once: true });
+document.addEventListener("pointerdown", unlockAudioOnce, { once: true })
 
 tickSound.loop = false;
 tickSound.preload = "auto";
 
 function startMusic() {
-  if (!audioUnlocked) return;
+  if (!audioUnlocked || musicMuted) return;
 
-  const bgMusic = document.getElementById("bgMusic");
+  bgMusic.loop = true;
   bgMusic.volume = 0.4;
 
-  bgMusic.play().catch(err => {
-    console.log("Music blocked:", err);
-  });
+  bgMusic.play().catch(() => {});
+}
+
+function stopMusic() {
+  bgMusic.pause();
 }
 
 document.addEventListener('click', () => {
@@ -118,18 +112,16 @@ document.addEventListener('click', () => {
 }, { once: true });
 
 function toggleMusic() {
-  const music = document.getElementById('bgMusic');
-  const btn = document.getElementById('muteBtn');
-
   musicMuted = !musicMuted;
 
+  const btn = document.getElementById("muteBtn");
+
   if (musicMuted) {
-    music.pause();
+    stopMusic();
     btn.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
   } else {
-    music.play().catch(() => {});
-    btn.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
     startMusic();
+    btn.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
   }
 }
 
@@ -143,9 +135,11 @@ function playSound(id) {
   sound.play().catch(() => {});
 }
 
-document.querySelectorAll('button').forEach(btn => {
-  btn.addEventListener('click', () => playSound('clickSound'));
-});
+function playClick() {
+  if (!audioUnlocked) return;
+  clickSound.currentTime = 0;
+  clickSound.play().catch(() => {});
+}
 
 function fadeOutMusic(duration = 1000) {
   const music = document.getElementById('bgMusic');
