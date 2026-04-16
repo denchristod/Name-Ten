@@ -92,6 +92,7 @@ function unlockAudio() {
   });
 
   audioUnlocked = true;
+  startMusic();
   console.log("Audio unlocked");
 }
 
