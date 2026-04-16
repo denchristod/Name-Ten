@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Name Ten!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="roundIntro" class="round-intro hidden">
+  <div class="round-intro-text" id="roundIntroText">Round 1</div>
+  <div class="round-intro-sub" id="roundIntroSub">Team 1</div>
+</div>
+
+<div id="app">
+
+<!-- MAIN MENU -->
+<div id="menuScreen" class="screen active">
+  <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; width:100%; max-width:480px;">
+    <h1 class="logo reveal">Name Ten!</h1>
+    <p class="logo-sub reveal reveal-d1">The Party Quiz Game</p>
+    <div class="card reveal reveal-d2" style="margin-bottom:12px;">
+      <button class="btn btn-gold" onclick="showScreen('setupScreen')">▶ Start Game</button>
+      <button class="btn btn-outline" onclick="showScreen('howScreen')" style="margin-top:12px;">? How to Play</button>
+    </div>
+  </div>
+</div>
+
+<!-- HOW TO PLAY -->
+<div id="howScreen" class="screen">
+  <div style="width:100%; max-width:480px; padding-top:8px;">
+    <button class="btn btn-outline btn-sm" onclick="showScreen('menuScreen')" style="margin-bottom:20px;">← Back</button>
+    <h2 style="font-family:'Fredoka One',cursive; font-size:28px; color:var(--gold); margin-bottom:20px;">How to Play</h2>
+    <div class="card">
+      <ul class="how-list">
+        <li class="how-item"><div class="how-num">1</div><div class="how-text"><strong>Two teams</strong> take turns answering questions across multiple rounds.</div></li>
+        <li class="how-item"><div class="how-num">2</div><div class="how-text">Each question asks you to <strong>name 10 things</strong> in a category (e.g. "Name 10 things in a fridge").</div></li>
+        <li class="how-item"><div class="how-num">3</div><div class="how-text">The <strong>reading team</strong> reads the question aloud. The <strong>playing team</strong> has <strong>90 seconds</strong> to call out answers.</div></li>
+        <li class="how-item"><div class="how-num">4</div><div class="how-text">The team holding the phone <strong>taps each item</strong> when it's named correctly.</div></li>
+        <li class="how-item"><div class="how-num">5</div><div class="how-text">Items are worth <strong>1–4 points</strong> based on difficulty. Harder answers = more points!</div></li>
+        <li class="how-item"><div class="how-num">6</div><div class="how-text">After time's up, there's a <strong>correction window</strong> to fix any mistakes before passing the phone.</div></li>
+        <li class="how-item"><div class="how-num">7</div><div class="how-text">After all rounds, the <strong>team with the most points wins!</strong></div></li>
+      </ul>
+      <div class="pts-legend" style="margin-top:20px;">
+        <div class="pts-badge pts-1">1pt — Easy</div>
+        <div class="pts-badge pts-2">2pts — Medium</div>
+        <div class="pts-badge pts-3">3pts — Hard</div>
+        <div class="pts-badge pts-4">4pts — Very Hard</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SETUP SCREEN -->
+<div id="setupScreen" class="screen">
+  <div style="width:100%; max-width:480px; padding-top:8px; padding-bottom:40px;">
+    <button class="btn btn-outline btn-sm" onclick="showScreen('menuScreen')" style="margin-bottom:20px;">← Back</button>
+    <h2 style="font-family:'Fredoka One',cursive; font-size:28px; color:var(--gold); margin-bottom:20px;">Game Setup</h2>
+
+    <div class="card" style="margin-bottom:16px;">
+      <div class="section-title">Team Names</div>
+      <label class="field-label">Team 1</label>
+      <input type="text" id="team1name" placeholder="Team Rocket" value="Team 1">
+      <label class="field-label">Team 1 Colour</label>
+<div class="color-picker" id="team1colors">
+  <button class="color-btn selected" data-color="#7aa98a" style="background:#7aa98a"></button>
+  <button class="color-btn" data-color="#7fa7d9" style="background:#7fa7d9"></button>
+  <button class="color-btn" data-color="#7859ceff" style="background:#7859ceff"></button>
+  <button class="color-btn" data-color="#e0a36d" style="background:#e0a36d"></button>
+  <button class="color-btn" data-color="#d97a7a" style="background:#d97a7a"></button>
+  <button class="color-btn" data-color="#a8a8a8" style="background:#a8a8a8"></button>
+</div>
+      <label class="field-label">Team 2</label>
+      <input type="text" id="team2name" placeholder="The Legends" value="Team 2">
+      <label class="field-label">Team 2 Colour</label>
+<div class="color-picker" id="team2colors">
+  <button class="color-btn selected" data-color="#7fa7d9" style="background:#7fa7d9"></button>
+  <button class="color-btn" data-color="#7aa98a" style="background:#7aa98a"></button>
+  <button class="color-btn" data-color="#7859ceff" style="background:#7859ceff"></button>
+  <button class="color-btn" data-color="#e0a36d" style="background:#e0a36d"></button>
+  <button class="color-btn" data-color="#d97a7a" style="background:#d97a7a"></button>
+  <button class="color-btn" data-color="#a8a8a8" style="background:#a8a8a8"></button>
+</div>
+    </div>
+
+    <div class="card" style="margin-bottom:16px;">
+      <div class="section-title">Number of Rounds</div>
+      <div class="round-btns">
+        <button class="round-btn" onclick="selectRounds(5,this)">5</button>
+        <button class="round-btn selected" onclick="selectRounds(10,this)">10</button>
+        <button class="round-btn" onclick="selectRounds(20,this)">20</button>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom:24px;">
+      <div class="section-title">Categories</div>
+      <div class="cat-grid" id="catGrid"></div>
+    </div>
+
+    <button class="btn btn-gold" onclick="startGame()">Start Game!</button>
+  </div>
+</div>
+
+<!-- HANDOFF SCREEN (pass phone) -->
+<div id="handoffScreen" class="screen">
+  <div class="handoff-screen-inner">
+    <div class="big-emoji" id="handoffEmoji">📱</div>
+    <div class="handoff-title" id="handoffTitle">Pass the Phone!</div>
+    <div class="handoff-sub" id="handoffSub">Hand the phone to the other team</div>
+    <button class="btn btn-gold" id="handoffBtn" onclick="handoffContinue()" style="max-width:320px;">Ready!</button>
+  </div>
+</div>
+
+<!-- GAME SCREEN -->
+<div id="gameScreen" class="screen">
+  <div class="game-top">
+    <div class="score-pill" id="scoreLeft">
+      <div class="score-team" id="scoreLeftLabel">TEAM 1</div>
+      <div class="score-val" id="scoreLeftVal">0</div>
+    </div>
+    <div class="round-info">
+      <div class="round-label">Round</div>
+      <div class="round-num" id="roundDisplay">1 / 10</div>
+    </div>
+    <div class="score-pill" id="scoreRight">
+      <div class="score-team" id="scoreRightLabel">TEAM 2</div>
+      <div class="score-val" id="scoreRightVal">0</div>
+    </div>
+  </div>
+
+  <div class="game-body">
+    <div class="turn-banner" id="turnBanner">
+      <div class="turn-label" id="turnLabel">Playing</div>
+      <div class="turn-name" id="turnName">Team 1</div>
+    </div>
+
+    <div class="question-card">
+      <div class="question-cat" id="questionCat">FOOD</div>
+      <div class="question-text" id="questionText">Name 10 things you can find in a fridge</div>
+    </div>
+
+    <div class="timer-row" id="timerRow">
+      <div class="timer-ring-wrap">
+        <svg width="64" height="64" viewBox="0 0 64 64">
+          <circle cx="32" cy="32" r="26" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="6"/>
+          <circle id="timerRing" cx="32" cy="32" r="26" fill="none" stroke="var(--teal)" stroke-width="6" stroke-linecap="round" stroke-dasharray="163.4" stroke-dashoffset="0"/>
+        </svg>
+        <div class="timer-text" id="timerText">90</div>
+      </div>
+      <div class="timer-bar-wrap">
+        <div class="timer-bar-bg"><div class="timer-bar" id="timerBar" style="width:100%; background:var(--teal);"></div></div>
+        <div class="timer-label">seconds remaining</div>
+      </div>
+    </div>
+
+    <div class="items-list" id="itemsList"></div>
+
+    <div id="timerBtns" style="display:flex; gap:10px; margin-top:4px;">
+      <button class="btn btn-teal" id="startTimerBtn" onclick="startTimer()" style="flex:1;">Start Timer</button>
+    </div>
+    <button class="btn btn-teal" id="allDoneBtn" onclick="allDone()" style="display:none; flex:1;">All Done</button>
+    <button class="btn btn-gold" id="doneBtn" onclick="doneTurn()" style="display:none; margin-top:4px;">Done — Review Answers</button>
+    <button class="btn btn-green" id="confirmBtn" onclick="confirmTurn()" style="display:none; margin-top:4px;">Confirm &amp; Pass Phone →</button>
+  </div>
+</div>
+
+<!-- RESULTS SCREEN -->
+<div id="resultsScreen" class="screen">
+  <div style="width:100%; max-width:480px; text-align:center; padding-top:20px; padding-bottom:40px;">
+    <div style="font-size:56px; margin-bottom:12px;">🏆</div>
+    <div class="winner-banner" id="winnerBanner">
+      <div class="winner-label">WINNER</div>
+      <div class="winner-name" id="winnerName">Team 1</div>
+      <div class="winner-score" id="winnerScore">120 pts</div>
+    </div>
+    <div class="score-breakdown" id="scoreBreakdown"></div>
+    <button class="btn btn-gold" onclick="showScreen('menuScreen')" style="max-width:480px;">Play Again</button>
+  </div>
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
