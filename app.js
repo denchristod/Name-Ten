@@ -62,13 +62,54 @@ let state = {
 let musicStarted = false;
 let musicMuted = false;
 
+let audioUnlocked = false;
+
+function unlockAudio() {
+  if (audioUnlocked) return;
+
+  const sounds = [
+    document.getElementById("bgMusic"),
+    document.getElementById("clickSound"),
+    document.getElementById("tickSound"),
+    document.getElementById("alarmSound"),
+    document.getElementById("winSound")
+  ];
+
+  sounds.forEach(audio => {
+    if (!audio) return;
+
+    audio.volume = audio.volume || 1;
+
+    const playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise
+        .then(() => {
+          audio.pause();
+          audio.currentTime = 0;
+        })
+        .catch(() => {});
+    }
+  });
+
+  audioUnlocked = true;
+  console.log("Audio unlocked");
+}
+
+document.addEventListener("touchstart", unlockAudio, { once: true });
+document.addEventListener("click", unlockAudio, { once: true });
+
+tickSound.loop = false;
+tickSound.preload = "auto";
+
 function startMusic() {
-  const music = document.getElementById('bgMusic');
+  if (!audioUnlocked) return;
 
-  if (musicMuted) return;
+  const bgMusic = document.getElementById("bgMusic");
+  bgMusic.volume = 0.4;
 
-  music.volume = 0.4;
-  music.play().catch(() => {});
+  bgMusic.play().catch(err => {
+    console.log("Music blocked:", err);
+  });
 }
 
 document.addEventListener('click', () => {
@@ -92,11 +133,13 @@ function toggleMusic() {
 }
 
 function playSound(id) {
+  if (!audioUnlocked) return;
+
   const sound = document.getElementById(id);
   if (!sound) return;
 
   sound.currentTime = 0;
-  sound.play();
+  sound.play().catch(() => {});
 }
 
 document.querySelectorAll('button').forEach(btn => {
