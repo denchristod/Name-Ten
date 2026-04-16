@@ -76,17 +76,15 @@ function unlockAudioOnce() {
 
   sounds.forEach(s => {
     if (!s) return;
-    s.volume = s.volume ?? 1;
-    s.play().then(() => {
-      s.pause();
-      s.currentTime = 0;
-    }).catch(() => {});
+
+    // preload ONLY — no play()
+    try {
+      s.preload = "auto";
+      s.load();
+    } catch {}
   });
 
-  // ONLY start music after unlock AND if not muted
-  if (!musicMuted) {
-    startMusic();
-  }
+  if (!musicMuted) startMusic();
 }
 
 document.addEventListener("pointerdown", unlockAudioOnce, { once: true })
@@ -131,8 +129,13 @@ function playSound(id) {
   const sound = document.getElementById(id);
   if (!sound) return;
 
-  sound.currentTime = 0;
-  sound.play().catch(() => {});
+  try {
+    sound.pause();         
+    sound.currentTime = 0;
+
+    const p = sound.play();
+    if (p) p.catch(() => {});
+  } catch {}
 }
 
 function playClick() {
