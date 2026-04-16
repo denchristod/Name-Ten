@@ -56,7 +56,71 @@ let state = {
   currentItems: [],
   phase: 'handoff',
   handoffStep: 'pre',
+  timePerRound: 90
 };
+
+let musicStarted = false;
+let musicMuted = false;
+
+function startMusic() {
+  const music = document.getElementById('bgMusic');
+
+  if (musicMuted) return;
+
+  music.volume = 0.4;
+  music.play().catch(() => {});
+}
+
+document.addEventListener('click', () => {
+  startMusic();
+}, { once: true });
+
+function toggleMusic() {
+  const music = document.getElementById('bgMusic');
+  const btn = document.getElementById('muteBtn');
+
+  musicMuted = !musicMuted;
+
+  if (musicMuted) {
+    music.pause();
+    btn.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+  } else {
+    music.play().catch(() => {});
+    btn.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+    startMusic();
+  }
+}
+
+function playSound(id) {
+  const sound = document.getElementById(id);
+  if (!sound) return;
+
+  sound.currentTime = 0;
+  sound.play();
+}
+
+document.querySelectorAll('button').forEach(btn => {
+  btn.addEventListener('click', () => playSound('clickSound'));
+});
+
+function fadeOutMusic(duration = 1000) {
+  const music = document.getElementById('bgMusic');
+
+  let volume = music.volume;
+  const step = volume / (duration / 50);
+
+  const fade = setInterval(() => {
+    volume -= step;
+
+    if (volume <= 0) {
+      volume = 0;
+      music.pause();
+      clearInterval(fade);
+    }
+
+    music.volume = volume;
+  }, 50);
+}
 
 function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
@@ -66,6 +130,12 @@ function showScreen(id) {
 function selectRounds(n, el) {
   state.rounds = n;
   document.querySelectorAll('.round-btn').forEach(b => b.classList.remove('selected'));
+  el.classList.add('selected');
+}
+
+function selectTime(n, el) {
+  state.timePerRound = n;
+  document.querySelectorAll('.time-btn').forEach(b => b.classList.remove('selected'));
   el.classList.add('selected');
 }
 
@@ -148,6 +218,7 @@ function buildCatGrid() {
 }
 
 function startGame() {
+  fadeOutMusic(1200);
   state.team1 = document.getElementById('team1name').value || 'Team 1';
   state.team2 = document.getElementById('team2name').value || 'Team 2';
   if(state.enabledCats.size === 0) { alert('Please enable at least one category!'); return; }
@@ -164,17 +235,14 @@ function showHandoff(type) {
   const holding = state.currentTeam === 1 ? t2 : t1;
 
   if(type === 'start') {
-    document.getElementById('handoffEmoji').textContent = '🎮';
     document.getElementById('handoffTitle').textContent = 'Game Start!';
     document.getElementById('handoffSub').innerHTML = `<strong style="color:var(--text)">${playing}</strong> goes first.<br><span style="color:var(--muted)">Round 1 of ${state.rounds}</span>`;
     document.getElementById('handoffBtn').textContent = `${playing} is Ready!`;
   } else if(type === 'pass') {
-    document.getElementById('handoffEmoji').textContent = '📲';
     document.getElementById('handoffTitle').textContent = 'Pass the Phone!';
-    document.getElementById('handoffSub').innerHTML = `Hand the phone to <strong style="color:var(--text)">${playing}</strong>.<br><span style="color:var(--muted)">${holding} — no peeking! 👀</span>`;
+    document.getElementById('handoffSub').innerHTML = `Hand the phone to <strong style="color:var(--text)">${holding}</strong>.<br><span style="color:var(--muted)">${playing} — no peeking! 👀</span>`;
     document.getElementById('handoffBtn').textContent = `${playing} is Ready!`;
   } else if(type === 'end') {
-    document.getElementById('handoffEmoji').textContent = '🏁';
     document.getElementById('handoffTitle').textContent = 'Game Over!';
     document.getElementById('handoffSub').textContent = 'Tallying up the scores...';
     document.getElementById('handoffBtn').textContent = 'See Results!';
@@ -205,7 +273,7 @@ function pickQuestion() {
 function loadTurn() {
     console.log("LOAD TURN CALLED");
   clearInterval(state.timerInterval);
-  state.timeLeft = 90;
+  state.timeLeft = state.timePerRound;
   state.timerRunning = false;
   state.timerDone = false;
 
@@ -226,7 +294,7 @@ function loadTurn() {
   document.getElementById('questionText').textContent = q.q;
 
   renderItems(false);
-  updateTimer(90);
+  updateTimer(state.timePerRound);
 
   document.getElementById('startTimerBtn').style.display = '';
   document.getElementById('timerBtns').style.display = 'flex';
@@ -271,10 +339,10 @@ function renderItems(interactive) {
 
 function updateTimer(secs) {
   const circ = 2 * Math.PI * 26;
-  const offset = circ * (1 - secs/90);
+  const offset = circ * (1 - secs/state.timePerRound);
   document.getElementById('timerRing').style.strokeDashoffset = offset;
   document.getElementById('timerText').textContent = secs;
-  const pct = secs / 90 * 100;
+  const pct = secs / state.timePerRound * 100;
   document.getElementById('timerBar').style.width = pct + '%';
   const col = pct > 50 ? 'var(--teal)' : pct > 20 ? 'var(--gold)' : 'var(--red)';
   document.getElementById('timerBar').style.background = col;
@@ -288,7 +356,12 @@ function startTimer() {
   renderItems(true);
   state.timerInterval = setInterval(() => {
     state.timeLeft--;
-    updateTimer(state.timeLeft);
+
+if (state.timeLeft === 10) {
+  playSound('tickSound'); // plays ONCE
+}
+
+updateTimer(state.timeLeft);
     if(state.timeLeft <= 0) {
       clearInterval(state.timerInterval);
       if (!state.timerDone) timerEnd();
@@ -325,6 +398,7 @@ function updateAllDoneButton() {
 }
 
 function timerEnd() {
+  playSound('alarmSound');
   state.timerRunning = false;
   state.timerDone = true;
 
@@ -415,6 +489,8 @@ function allDone() {
 }
 
 function showResults() {
+  winSound.volume = 0.3;
+  playSound('winSound');
   const s1 = state.score1, s2 = state.score2;
   let winName, winScore;
   if(s1 > s2) { winName = state.team1; winScore = s1; }
@@ -452,5 +528,23 @@ function showRoundIntro(callback) {
   }, 1500);
 }
 
-buildCatGrid();
+function restartGame() {
+  // reset state
+  state.currentRound = 1;
+  state.currentTeam = 1;
+  state.score1 = 0;
+  state.score2 = 0;
+  state.usedQs = new Set();
+
+  showScreen('menuScreen');
+  startMusic();
+}
+
+window.onload = () => {
+  buildCatGrid();
+
+  document.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', () => playSound('clickSound'));
+  });
+};
 setupColorPickers();

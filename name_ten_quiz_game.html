@@ -8,9 +8,19 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Name Ten!</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
+
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="clickSound" src="click.mp3"></audio>
+<audio id="tickSound" src="tick.mp3"></audio>
+<audio id="alarmSound" src="alarm.mp3"></audio>
+<audio id="winSound" src="win.mp3"></audio>
 
 <div id="roundIntro" class="round-intro hidden">
   <div class="round-intro-text" id="roundIntroText">Round 1</div>
@@ -21,6 +31,7 @@
 
 <!-- MAIN MENU -->
 <div id="menuScreen" class="screen active">
+  <button id="muteBtn" onclick="toggleMusic()"><i class="fa-solid fa-volume-high"></i></button>
   <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; width:100%; max-width:480px;">
     <h1 class="logo reveal">Name Ten!</h1>
     <p class="logo-sub reveal reveal-d1">The Party Quiz Game</p>
@@ -97,6 +108,15 @@
       </div>
     </div>
 
+    <div class="card" style="margin-bottom:16px;">
+      <div class="section-title">Round Time</div>
+      <div class="round-btns">
+        <button class="time-btn" onclick="selectTime(60,this)">60s</button>
+        <button class="time-btn selected" onclick="selectTime(90,this)">90s</button>
+        <button class="time-btn" onclick="selectTime(120,this)">120s</button>
+      </div>
+    </div>
+
     <div class="card" style="margin-bottom:24px;">
       <div class="section-title">Categories</div>
       <div class="cat-grid" id="catGrid"></div>
@@ -109,7 +129,6 @@
 <!-- HANDOFF SCREEN (pass phone) -->
 <div id="handoffScreen" class="screen">
   <div class="handoff-screen-inner">
-    <div class="big-emoji" id="handoffEmoji">📱</div>
     <div class="handoff-title" id="handoffTitle">Pass the Phone!</div>
     <div class="handoff-sub" id="handoffSub">Hand the phone to the other team</div>
     <button class="btn btn-gold" id="handoffBtn" onclick="handoffContinue()" style="max-width:320px;">Ready!</button>
@@ -172,14 +191,13 @@
 <!-- RESULTS SCREEN -->
 <div id="resultsScreen" class="screen">
   <div style="width:100%; max-width:480px; text-align:center; padding-top:20px; padding-bottom:40px;">
-    <div style="font-size:56px; margin-bottom:12px;">🏆</div>
     <div class="winner-banner" id="winnerBanner">
       <div class="winner-label">WINNER</div>
       <div class="winner-name" id="winnerName">Team 1</div>
       <div class="winner-score" id="winnerScore">120 pts</div>
     </div>
     <div class="score-breakdown" id="scoreBreakdown"></div>
-    <button class="btn btn-gold" onclick="showScreen('menuScreen')" style="max-width:480px;">Play Again</button>
+    <button class="btn btn-gold" onclick="restartGame()">Play Again</button>
   </div>
 </div>
 
