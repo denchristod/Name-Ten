@@ -1,34 +1,21 @@
-const CATEGORIES = [
-  { id:'food', label:'Food & Drink', icon:'🍕' },
-  { id:'sport', label:'Sport', icon:'⚽' },
-  { id:'nature', label:'Nature', icon:'🌿' },
-  { id:'tvfilm', label:'TV & Film', icon:'🎬' },
-  { id:'travel', label:'Travel', icon:'✈️' },
-  { id:'home', label:'Around the Home', icon:'🏠' },
-  { id:'science', label:'Science', icon:'🔬' },
-  { id:'music', label:'Music', icon:'🎵' },
-];
+let CATEGORIES = [];
+let ALL_QUESTIONS = [];
 
-const ALL_QUESTIONS = [
-  { cat:'food', q:'Name 10 things you can find in a fridge', items:[{n:'Milk',p:1},{n:'Butter',p:1},{n:'Eggs',p:1},{n:'Cheese',p:1},{n:'Leftovers',p:2},{n:'Ketchup',p:2},{n:'Orange juice',p:2},{n:'Yoghurt',p:2},{n:'Olives',p:3},{n:'Capers',p:4}] },
-  { cat:'food', q:'Name 10 things you might eat for breakfast', items:[{n:'Cereal',p:1},{n:'Toast',p:1},{n:'Eggs',p:1},{n:'Bacon',p:1},{n:'Porridge',p:2},{n:'Pancakes',p:2},{n:'Fruit',p:2},{n:'Yoghurt',p:2},{n:'Croissant',p:3},{n:'Kippers',p:4}] },
-  { cat:'food', q:'Name 10 types of pasta', items:[{n:'Spaghetti',p:1},{n:'Penne',p:1},{n:'Fusilli',p:1},{n:'Rigatoni',p:2},{n:'Farfalle',p:2},{n:'Tagliatelle',p:2},{n:'Linguine',p:3},{n:'Orecchiette',p:3},{n:'Conchiglie',p:3},{n:'Pappardelle',p:4}] },
-  { cat:'food', q:'Name 10 things you can put on a pizza', items:[{n:'Cheese',p:1},{n:'Tomato sauce',p:1},{n:'Pepperoni',p:1},{n:'Mushrooms',p:1},{n:'Olives',p:2},{n:'Peppers',p:2},{n:'Ham',p:2},{n:'Onion',p:2},{n:'Anchovies',p:3},{n:'Capers',p:4}] },
-  { cat:'sport', q:'Name 10 sports played with a ball', items:[{n:'Football',p:1},{n:'Basketball',p:1},{n:'Tennis',p:1},{n:'Rugby',p:1},{n:'Cricket',p:2},{n:'Baseball',p:2},{n:'Volleyball',p:2},{n:'Golf',p:2},{n:'Squash',p:3},{n:'Water polo',p:4}] },
-  { cat:'sport', q:'Name 10 Olympic sports', items:[{n:'Swimming',p:1},{n:'Athletics',p:1},{n:'Gymnastics',p:1},{n:'Cycling',p:1},{n:'Boxing',p:2},{n:'Rowing',p:2},{n:'Judo',p:2},{n:'Archery',p:3},{n:'Fencing',p:3},{n:'Modern pentathlon',p:4}] },
-  { cat:'nature', q:'Name 10 animals you can find in the ocean', items:[{n:'Shark',p:1},{n:'Dolphin',p:1},{n:'Whale',p:1},{n:'Octopus',p:1},{n:'Jellyfish',p:2},{n:'Starfish',p:2},{n:'Crab',p:2},{n:'Sea turtle',p:2},{n:'Anglerfish',p:3},{n:'Mantis shrimp',p:4}] },
-  { cat:'nature', q:'Name 10 types of tree', items:[{n:'Oak',p:1},{n:'Pine',p:1},{n:'Birch',p:1},{n:'Willow',p:2},{n:'Maple',p:2},{n:'Ash',p:2},{n:'Elm',p:2},{n:'Beech',p:3},{n:'Sycamore',p:3},{n:'Yew',p:4}] },
-  { cat:'tvfilm', q:'Name 10 superhero films', items:[{n:'The Avengers',p:1},{n:'Batman',p:1},{n:'Spider-Man',p:1},{n:'Iron Man',p:1},{n:'Thor',p:2},{n:'Black Panther',p:2},{n:'Guardians of the Galaxy',p:2},{n:'Ant-Man',p:3},{n:'Shazam',p:3},{n:'The Eternals',p:4}] },
-  { cat:'tvfilm', q:'Name 10 animated Disney films', items:[{n:'The Lion King',p:1},{n:'Frozen',p:1},{n:'Moana',p:1},{n:'Cinderella',p:1},{n:'Ratatouille',p:2},{n:'Tangled',p:2},{n:'Encanto',p:2},{n:'Treasure Planet',p:3},{n:'Bolt',p:3},{n:'The Black Cauldron',p:4}] },
-  { cat:'travel', q:'Name 10 countries in Europe', items:[{n:'France',p:1},{n:'Germany',p:1},{n:'Spain',p:1},{n:'Italy',p:1},{n:'Portugal',p:2},{n:'Netherlands',p:2},{n:'Sweden',p:2},{n:'Austria',p:2},{n:'Slovakia',p:3},{n:'Liechtenstein',p:4}] },
-  { cat:'travel', q:'Name 10 capital cities', items:[{n:'Paris',p:1},{n:'London',p:1},{n:'Rome',p:1},{n:'Madrid',p:1},{n:'Berlin',p:2},{n:'Tokyo',p:2},{n:'Ottawa',p:2},{n:'Nairobi',p:3},{n:'Ulaanbaatar',p:3},{n:'Nur-Sultan',p:4}] },
-  { cat:'home', q:'Name 10 things you find in a living room', items:[{n:'Sofa',p:1},{n:'Television',p:1},{n:'Coffee table',p:1},{n:'Cushions',p:1},{n:'Bookshelf',p:2},{n:'Remote control',p:2},{n:'Lamp',p:2},{n:'Rug',p:2},{n:'Houseplant',p:3},{n:'Ottoman',p:4}] },
-  { cat:'home', q:'Name 10 things in a bathroom', items:[{n:'Toothbrush',p:1},{n:'Towel',p:1},{n:'Shampoo',p:1},{n:'Soap',p:1},{n:'Mirror',p:2},{n:'Toilet paper',p:2},{n:'Shower curtain',p:2},{n:'Toothpaste',p:2},{n:'Pumice stone',p:3},{n:'Loofah',p:4}] },
-  { cat:'science', q:'Name 10 elements from the periodic table', items:[{n:'Hydrogen',p:1},{n:'Oxygen',p:1},{n:'Carbon',p:1},{n:'Gold',p:1},{n:'Helium',p:2},{n:'Nitrogen',p:2},{n:'Iron',p:2},{n:'Calcium',p:2},{n:'Neon',p:3},{n:'Xenon',p:4}] },
-  { cat:'science', q:'Name 10 planets or dwarf planets in our solar system', items:[{n:'Earth',p:1},{n:'Mars',p:1},{n:'Jupiter',p:1},{n:'Saturn',p:1},{n:'Venus',p:2},{n:'Mercury',p:2},{n:'Uranus',p:2},{n:'Neptune',p:2},{n:'Pluto',p:3},{n:'Eris',p:4}] },
-  { cat:'music', q:'Name 10 musical instruments', items:[{n:'Guitar',p:1},{n:'Piano',p:1},{n:'Drums',p:1},{n:'Violin',p:1},{n:'Trumpet',p:2},{n:'Saxophone',p:2},{n:'Cello',p:2},{n:'Harp',p:3},{n:'Oboe',p:3},{n:'Theremin',p:4}] },
-  { cat:'music', q:'Name 10 music genres', items:[{n:'Pop',p:1},{n:'Rock',p:1},{n:'Jazz',p:1},{n:'Classical',p:1},{n:'Hip-hop',p:2},{n:'Electronic',p:2},{n:'Country',p:2},{n:'Reggae',p:2},{n:'Bossa nova',p:3},{n:'Bluegrass',p:4}] },
-];
+async function loadData() {
+  const res = await fetch('data.json');
+  const data = await res.json();
+
+  CATEGORIES = data.categories;
+  ALL_QUESTIONS = data.questions;
+
+  state.enabledCats = new Set(
+  CATEGORIES
+    .filter(c => c.default)
+    .map(c => c.id)
+);
+
+  buildCatGrid(); // IMPORTANT: rebuild UI after loading data
+}
 
 const TEAM_COLORS = [
   '#7aa98a', // soft green
@@ -41,7 +28,7 @@ const TEAM_COLORS = [
 
 let state = {
   rounds: 10,
-  enabledCats: new Set(CATEGORIES.map(c=>c.id)),
+  enabledCats: new Set(CATEGORIES.filter(c => c.default !== false).map(c => c.id)),
   team1: 'Team 1', team2: 'Team 2',
   team1Color: '#5f8f6b',
   team2Color: '#7aa98a',
@@ -245,15 +232,28 @@ function updateColorAvailability() {
 function buildCatGrid() {
   const g = document.getElementById('catGrid');
   g.innerHTML = '';
+
   CATEGORIES.forEach(c => {
     const btn = document.createElement('button');
-    btn.className = 'cat-btn on';
+    btn.className = 'cat-btn';
+
+    const isOn = state.enabledCats.has(c.id);
+
+    if (isOn) btn.classList.add('on');
+
     btn.dataset.id = c.id;
     btn.innerHTML = `<span class="cat-icon">${c.icon}</span>${c.label}`;
+
     btn.onclick = () => {
-      if(state.enabledCats.has(c.id)) { state.enabledCats.delete(c.id); btn.classList.remove('on'); }
-      else { state.enabledCats.add(c.id); btn.classList.add('on'); }
+      if (state.enabledCats.has(c.id)) {
+        state.enabledCats.delete(c.id);
+        btn.classList.remove('on');
+      } else {
+        state.enabledCats.add(c.id);
+        btn.classList.add('on');
+      }
     };
+
     g.appendChild(btn);
   });
 }
@@ -581,11 +581,15 @@ function restartGame() {
   startMusic();
 }
 
-window.onload = () => {
+window.onload = async () => {
+  await loadData();
+
+  setupColorPickers();
   buildCatGrid();
 
   document.querySelectorAll('button').forEach(btn => {
     btn.addEventListener('click', () => playSound('clickSound'));
   });
 };
-setupColorPickers();
+
+ setupColorPickers();
