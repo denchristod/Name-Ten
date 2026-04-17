@@ -8,8 +8,7 @@
     { "id": "travel", "label": "Travel", "icon": "✈️", "default": true },
     { "id": "home", "label": "Around the Home", "icon": "🏠", "default": true },
     { "id": "science", "label": "Science", "icon": "🔬", "default": true },
-    { "id": "music", "label": "Music", "icon": "🎵", "default": true },
-    { "id": "nsfw", "label": "NSFW", "icon": "👀", "default": false }
+    { "id": "music", "label": "Music", "icon": "🎵", "default": true }
   ],
 
   "questions": [
