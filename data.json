@@ -851,6 +851,22 @@
     { "n": "Pelicans", "p": 4 }
   ]
 },
+{
+  "cat": "sport",
+  "q": "Name 10 sports in the Summer Olympics",
+  "items": [
+    { "n": "Swimming", "p": 1 },
+    { "n": "Football", "p": 1 },
+    { "n": "Athletics", "p": 1 },
+    { "n": "Boxing", "p": 1 },
+    { "n": "Weightlifting", "p": 2 },
+    { "n": "Taekwondo", "p": 2 },
+    { "n": "Shooting", "p": 2 },
+    { "n": "Equestrian", "p": 2 },
+    { "n": "Triathlon", "p": 3 },
+    { "n": "Breaking", "p": 4 }
+  ]
+},
 
     {
       "cat": "nature",
@@ -1673,6 +1689,157 @@
     { "n": "Hugh Jackman", "p": 4 }
   ]
 },
+{
+  "cat": "tvfilm",
+  "q": "Name 10 characters from Breaking Bad",
+  "items": [
+    { "n": "Walter White", "p": 1 },
+    { "n": "Jesse Pinkman", "p": 1 },
+    { "n": "Skyler", "p": 1 },
+    { "n": "Hank", "p": 1 },
+    { "n": "Saul Goodman", "p": 2 },
+    { "n": "Gus Fring", "p": 2 },
+    { "n": "Mike", "p": 2 },
+    { "n": "Marie", "p": 2 },
+    { "n": "Tuco", "p": 3 },
+    { "n": "Huell", "p": 4 }
+  ]
+},
+
+{
+  "cat": "tvfilm",
+  "q": "Name 10 characters from The Lord of the Rings",
+  "items": [
+    { "n": "Frodo", "p": 1 },
+    { "n": "Gandalf", "p": 1 },
+    { "n": "Aragorn", "p": 1 },
+    { "n": "Legolas", "p": 1 },
+    { "n": "Gimli", "p": 2 },
+    { "n": "Samwise", "p": 2 },
+    { "n": "Saruman", "p": 2 },
+    { "n": "Gollum", "p": 2 },
+    { "n": "Boromir", "p": 3 },
+    { "n": "Eowyn", "p": 4 }
+  ]
+},
+{
+  "cat": "tvfilm",
+  "q": "Name 10 horror films",
+  "items": [
+    { "n": "The Shining", "p": 1 },
+    { "n": "Halloween", "p": 1 },
+    { "n": "A Nightmare on Elm Street", "p": 1 },
+    { "n": "The Exorcist", "p": 1 },
+    { "n": "Get Out", "p": 2 },
+    { "n": "Hereditary", "p": 2 },
+    { "n": "It", "p": 2 },
+    { "n": "Scream", "p": 2 },
+    { "n": "Midsommar", "p": 3 },
+    { "n": "Suspiria", "p": 4 }
+  ]
+},
+
+{
+  "cat": "tvfilm",
+  "q": "Name 10 James Bond films",
+  "items": [
+    { "n": "Goldfinger", "p": 1 },
+    { "n": "Casino Royale", "p": 1 },
+    { "n": "Skyfall", "p": 1 },
+    { "n": "GoldenEye", "p": 1 },
+    { "n": "Spectre", "p": 2 },
+    { "n": "Thunderball", "p": 2 },
+    { "n": "The Spy Who Loved Me", "p": 2 },
+    { "n": "Licence to Kill", "p": 2 },
+    { "n": "For Your Eyes Only", "p": 3 },
+    { "n": "The Living Daylights", "p": 4 }
+  ]
+},
+{
+  "cat": "tvfilm",
+  "q": "Name 10 actors who have played James Bond",
+  "items": [
+    { "n": "Daniel Craig", "p": 1 },
+    { "n": "Sean Connery", "p": 1 },
+    { "n": "Roger Moore", "p": 1 },
+    { "n": "Pierce Brosnan", "p": 1 },
+    { "n": "Timothy Dalton", "p": 2 },
+    { "n": "George Lazenby", "p": 2 },
+    { "n": "David Niven", "p": 3 },
+    { "n": "Barry Nelson", "p": 4 },
+    { "n": "Bob Holness", "p": 4 },
+    { "n": "Idris Elba", "p": 4 }
+  ]
+},
+
+{
+  "cat": "tvfilm",
+  "q": "Name 10 characters from The Big Bang Theory",
+  "items": [
+    { "n": "Sheldon", "p": 1 },
+    { "n": "Leonard", "p": 1 },
+    { "n": "Penny", "p": 1 },
+    { "n": "Howard", "p": 1 },
+    { "n": "Raj", "p": 2 },
+    { "n": "Bernadette", "p": 2 },
+    { "n": "Amy", "p": 2 },
+    { "n": "Stuart", "p": 2 },
+    { "n": "Barry Kripke", "p": 3 },
+    { "n": "Wil Wheaton", "p": 4 }
+  ]
+},
+{
+  "cat": "tvfilm",
+  "q": "Name 10 Quentin Tarantino films",
+  "items": [
+    { "n": "Pulp Fiction", "p": 1 },
+    { "n": "Kill Bill", "p": 1 },
+    { "n": "Inglourious Basterds", "p": 1 },
+    { "n": "Django Unchained", "p": 1 },
+    { "n": "Reservoir Dogs", "p": 2 },
+    { "n": "Jackie Brown", "p": 2 },
+    { "n": "The Hateful Eight", "p": 2 },
+    { "n": "Once Upon a Time in Hollywood", "p": 2 },
+    { "n": "Four Rooms", "p": 3 },
+    { "n": "True Romance", "p": 4 }
+  ]
+},
+
+{
+  "cat": "tvfilm",
+  "q": "Name 10 Christopher Nolan films",
+  "items": [
+    { "n": "The Dark Knight", "p": 1 },
+    { "n": "Inception", "p": 1 },
+    { "n": "Interstellar", "p": 1 },
+    { "n": "Memento", "p": 1 },
+    { "n": "Dunkirk", "p": 2 },
+    { "n": "The Prestige", "p": 2 },
+    { "n": "Batman Begins", "p": 2 },
+    { "n": "Oppenheimer", "p": 2 },
+    { "n": "Insomnia", "p": 3 },
+    { "n": "Following", "p": 4 }
+  ]
+},
+
+{
+  "cat": "tvfilm",
+  "q": "Name 10 films set in space",
+  "items": [
+    { "n": "Star Wars", "p": 1 },
+    { "n": "Gravity", "p": 1 },
+    { "n": "Interstellar", "p": 1 },
+    { "n": "The Martian", "p": 1 },
+    { "n": "Alien", "p": 2 },
+    { "n": "Apollo 13", "p": 2 },
+    { "n": "Guardians of the Galaxy", "p": 2 },
+    { "n": "2001: A Space Odyssey", "p": 2 },
+    { "n": "Europa Report", "p": 3 },
+    { "n": "Silent Running", "p": 4 }
+  ]
+},
+
+
 
     {
   "cat": "animecart",
